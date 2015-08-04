@@ -1,4 +1,4 @@
 name: redolent octo kumquat
-baseurl: ""
 # Build settings
 markdown: kramdown
+baseurl: "/redolent-octo-kumquat"
