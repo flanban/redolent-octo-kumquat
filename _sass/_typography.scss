@@ -1,0 +1,78 @@
+//load fonts
+@font-face {
+  font-family: 'BebasNeue-Bold';
+  src: url('../fonts/BebasNeue-Bold.otf'); 
+  font-weight: bold;
+  font-style: normal;
+}
+
+//dumb type rules
+body {
+  color:#555;
+  line-height:1.4;
+}
+//dumb weights & variations
+.light {
+  font-weight:300;
+}
+.bold {
+  font-weight:bold;
+}
+.italic {
+  font-style:italic;
+}
+//dumb sizes
+.font-size-36 {
+  font-size:36px;
+}
+
+.twenty-point {
+  font-size:20px;
+}
+//dumb colors
+.text-black {
+  color:#000;
+}
+.text-white {
+  color:#fff;
+}
+.text-white-85 {
+  color:#d9d9d9;
+}
+
+//fonts
+.tiny-header { //vinyl-regular, 24, tracked out
+  font-family:"BebasNeue-Bold";
+  font-size:16px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:1em;
+}
+.small-header { //vinyl-regular, 24, tracked out
+  font-family:"BebasNeue-Bold";
+  font-size:24px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  margin-bottom:1em;
+}
+.body-copy { //proxNova-light, 20
+  font-family:"Open Sans";
+  font-size:14px;
+}
+.body-copy-display { //proxNova-light, 20
+  font-family:"Open Sans";
+  font-size:16px;
+  line-height:3.2;
+}
+.body-copy-display-bold { //proxNova, bold
+  
+}
+.type-on-a-circle {
+  
+}
+
+
+///layout
+.text-center {
+  text-align:center;
+}

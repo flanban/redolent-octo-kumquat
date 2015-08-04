@@ -18,3 +18,20 @@
   </body>
 
 </html>
+
+<!---------------------------------->
+
+
+<!DOCTYPE html>
+<html>
+  <body>
+    
+    {% include header.html %}
+    
+    <%= render 'shared/header' %>
+    <%= yield %>
+    <footer>
+      <p>footer</p>
+    </footer>
+  </body>
+</html>

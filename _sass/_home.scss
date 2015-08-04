@@ -1,0 +1,175 @@
+///// needs abstraction //////
+
+.step-header {
+  position: absolute;
+  text-align: center;
+  top:50%;
+  margin-top:-81px;
+  p:nth-of-type(1) {
+    margin-bottom:24px;
+  }
+  p:nth-of-type(2) {
+    margin-top:24px;
+  }
+}
+
+///// needs abstraction end //////
+
+.row-1, .row-2 {
+  position:relative;
+}
+
+.home-1 {
+  background-image:url('/images/home-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .down-button-home {
+    position:absolute;
+    bottom:0;
+    width:207px;
+    left:50%;
+    margin-left:-104px;
+    opacity:.5;
+    cursor:pointer;
+    &:hover {
+      opacity:1;
+    }
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    transition: opacity 300ms;
+  }
+}
+.home-2 {
+  > .text-holder {
+    max-width:890px;
+    margin:auto;
+    position:relative;
+    top: 0;
+    height:100%;
+    padding-top:9%;
+    > .text-holder { // the learn more area at the bottom
+     position:absolute;
+     bottom:5%;
+     width:365px;
+     left:50%;
+     margin-left:-182px;
+    }
+    p:nth-of-type(1) {
+      margin-bottom:7%;
+    }
+    .divider {
+      margin-bottom:7%;
+    }
+    p:nth-of-type(2) {
+      margin-bottom:3%;
+    }
+  }
+}
+.home-3 {
+  .a-file {
+    .row-1 {
+      .step-header {
+        width: 200px;
+        left: 50%;
+        margin-left: -100px;
+      }
+    }
+    .row-2 {
+      p {
+        max-width:495px;
+        position: absolute;
+        right: 140px;
+        top: 30%;    
+      }
+    }
+  }
+  .b-file {
+    background-image:url('/images/skateboard-keyboard.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.blue-banner {
+  width:100%;
+  height:225px;
+  background-color:#0497e7;
+  padding: 50px 10%;
+  font-family:'Open Sans';
+  span {
+    
+  }
+}
+.home-4 {
+  .vert-wrap {
+    width:100%;
+    height:90px;
+    top:50%;
+    position:absolute;
+    margin:-45px auto auto auto;
+    right: 0px;
+    &.pin-left {
+      left:100px;
+    }
+    .body-copy-display {
+      width: 330px;
+      position:relative;
+    }
+    .step-header {
+      top:0px;
+      position:relative;
+      margin:-16px 40px 0 0;
+    } 
+  }
+  .a-file {
+    .row-1 {
+      background-image:url('/images/quick-consult.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  .b-file {
+    .row-2 {
+      background-image:url('/images/on-a-chair.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.home-5 {
+  .text-holder {
+    width:700px;
+    margin:auto;
+    padding:48px 0 0 0;
+    ul {
+      width:100%;
+      margin-top:60px;
+      li {
+        width:33%;
+        float:left;
+        padding:0 15px;
+        h4 {
+          margin:2em 0;
+        }
+      }
+    }
+  }
+}
+.home-6 {
+  background-image:url('/images/beard-book.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .text-holder {
+    width:420px;
+    margin:auto;
+    padding:4% 0 0 0;
+    p {
+      width:260px;
+      margin:1em auto;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+//////// General SHIT /////////
+* { box-sizing: border-box }
+html { height: 100; }
+
+body {  height:100;min-height: 100%; }
+
+body p {
+  position:relative;
+}
+
+.uppercase { text-transform: uppercase; }
+
+.float-left {
+  float:left;  
+}
+
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}
+
+
+
+//////// Breakpoint SHIT /////////
+
+$breakpoint-a:480px; // main mobile breakpoint
+$breakpoint-b:580px; 
+$breakpoint-c:768px; // main tablet breakpoint
+$breakpoint-d:850px;
+$breakpoint-e:980px; // main desktop breakpoint
+$breakpoint-f:1440px;
+
+//////// Breakpoint SHIT END /////////
+
+
+//////// image loading SHIT /////////
+.animated-image {
+  margin-top:50px;
+  opacity:0;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+}
+
+//////// Colors SHIT /////////
+.bg-white-95 { // 95% white
+  background-color:#eeeeee;
+}
+.bg-white-85 { // 85% white
+  background-color:#d9d9d9;
+}
+.bg-white-50 {
+  background-color:#808080;  
+}
+.bg-white-35 {
+  background-color:#595959;
+}
+.bg-white-10 {
+  background-color:#1a1a1a;  
+}
+.bg-white-5 {
+  background-color:#0d0d0d;    
+}
+
+
+
+//////// Layout SHIT /////////
+body > section { 
+  overflow:hidden;
+  position:relative;
+}
+
+
+.layout-fp { 
+  height:96vh; width:100%;
+  p {
+    position:relative; 
+  }
+}// is a bit less than 100% on purpose
+
+.layout-fp-85   { 
+  height:85vh; 
+  width:100%;
+}
+.layout-fp-70   { 
+  height:70vh; 
+  width:100%;
+}
+
+.two-files-55-45 {
+  .a-file, .b-file {
+    position:absolute;
+    height:100%;
+  }
+  .a-file {
+    width:55%;
+    left:0;
+    .row-1 {
+      height:50%;
+    }
+    .row-2 {
+      height:50%;
+    }
+  }
+  .b-file {
+    width:45%;
+    left:55%;
+  }
+}
+.two-files-50-50 {
+  .a-file, .b-file {
+    position:absolute;
+    width:50%;
+    height:100%;
+  }
+  .a-file {
+    left:0;
+    .row-1 {
+      height:55%;
+    }
+    .row-2 {
+      height:45%;
+    }
+  }
+  .b-file {
+    left:50%;
+    .row-1 {
+      height:45%;
+    }
+    .row-2 {
+      height:55%;
+    }
+  }
+}
+.two-files-33-66 {
+  .a-file, .b-file {
+    position:absolute;
+    height:100%;
+  }
+  .a-file {
+    left:0;
+    width:33%;
+    padding: 100px 0 0 44px;
+  }
+  .b-file {
+    width:67%;
+    left:33%;
+  }
+}

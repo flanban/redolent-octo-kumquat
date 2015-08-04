@@ -1,0 +1,11 @@
+> nav {
+  position:absolute;
+  right:10px;
+  top:22px;
+  > ul {
+    li {
+      float:left;
+      padding: 4px 10px;
+    }
+  } 
+}
