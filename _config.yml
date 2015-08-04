@@ -1,0 +1,5 @@
+name: redolent octo kumquat
+pygments: true
+baseurl: /redolent-octo-kumquat
+# Build settings
+markdown: kramdown
