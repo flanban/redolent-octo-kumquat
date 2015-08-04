@@ -1,6 +1,8 @@
 body > footer {
   height:100vh;
   text-align:center;
+  position:relative;
+  z-inedx:100;
   p {
     position:relative;
     top:50%;

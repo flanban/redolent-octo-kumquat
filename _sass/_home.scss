@@ -20,10 +20,13 @@
 }
 
 .home-1 {
-  background-image:url('/images/home-1.png');
+  background-image:url('/images/home-1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position:fixed;
+  top:0;
+  left:0;
   .down-button-home {
     position:absolute;
     bottom:0;
@@ -41,6 +44,7 @@
   }
 }
 .home-2 {
+  margin-top:95vh;
   > .text-holder {
     max-width:890px;
     margin:auto;
@@ -97,6 +101,8 @@
   background-color:#0497e7;
   padding: 50px 10%;
   font-family:'Open Sans';
+  z-index:100;
+  position:relative;
   span {
     
   }

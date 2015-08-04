@@ -23,6 +23,9 @@ body p {
   clear:both;
 }
 
+a {
+  text-decoration:none;
+}
 
 
 //////// Breakpoint SHIT /////////
@@ -47,6 +50,9 @@ $breakpoint-f:1440px;
 }
 
 //////// Colors SHIT /////////
+.bg-white {
+  background-color:#fff;    
+}
 .bg-white-95 { // 95% white
   background-color:#eeeeee;
 }
@@ -88,6 +94,10 @@ body > section {
 }
 .layout-fp-70   { 
   height:70vh; 
+  width:100%;
+}
+.layout-fp-45   { 
+  height:45vh; 
   width:100%;
 }
 

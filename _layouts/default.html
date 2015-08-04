@@ -4,33 +4,12 @@
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>
-
-<!---------------------------------->
-
-
-<!DOCTYPE html>
-<html>
-  <body>
     
     {% include header.html %}
     
-    <%= render 'shared/header' %>
-    <%= yield %>
-    <footer>
+    {{ content }}
+    
+    <footer class="bg-white">
       <p>footer</p>
     </footer>
   </body>
