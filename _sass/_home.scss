@@ -20,7 +20,8 @@
   position:relative;
 }
 .home-1 {
-//  background-image:url('/images/home-1.jpg');
+  will-change: opacity;
+  background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/home-1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +34,7 @@
     width:207px;
     left:50%;
     margin-left:-104px;
-    opacity:.5;
+    opacity:.7;
     cursor:pointer;
     &:hover {
       opacity:1;
@@ -53,17 +54,14 @@
     height:100%;
     padding-top:9%;
     > .text-holder { // the learn more area at the bottom
-     position:absolute;
-     bottom:5%;
      width:365px;
-     left:50%;
-     margin-left:-182px;
+     margin:auto;
     }
     p:nth-of-type(1) {
       margin-bottom:7%;
     }
     .divider {
-      margin-bottom:7%;
+      margin-bottom:4%;
     }
     p:nth-of-type(2) {
       margin-bottom:3%;
@@ -81,15 +79,16 @@
     }
     .row-2 {
       p {
-        max-width:495px;
+        width:495px;
         position: absolute;
-        right: 140px;
+        left: 50%;
+        margin-left:-247px;
         top: 30%;    
       }
     }
   }
   .b-file {
-    background-image:url('/images/skateboard-keyboard.jpg');
+    background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/skateboard-keyboard.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,15 +108,13 @@
 }
 .home-4 {
   .vert-wrap {
-    width:100%;
+    width:560px;
     height:90px;
     top:50%;
     position:absolute;
-    margin:-45px auto auto auto;
-    right: 0px;
-    &.pin-left {
-      left:100px;
-    }
+    margin:-95px auto auto auto;
+    left: 50%;
+    margin-left:-270px;
     .body-copy-display {
       width: 330px;
       position:relative;
@@ -125,12 +122,12 @@
     .step-header {
       top:0px;
       position:relative;
-      margin:-16px 40px 0 0;
+      margin:32px 60px 0 0;
     } 
   }
   .a-file {
     .row-1 {
-      background-image:url('/images/quick-consult.jpg');
+      background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/quick-consult.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -138,7 +135,7 @@
   }
   .b-file {
     .row-2 {
-      background-image:url('/images/on-a-chair.jpg');
+      background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/on-a-chair.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -165,7 +162,7 @@
   }
 }
 .home-6 {
-  background-image:url('/images/beard-book.jpg');
+  background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/beard-book.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

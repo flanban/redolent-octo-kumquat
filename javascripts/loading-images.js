@@ -1,4 +1,6 @@
 $(function(){
+
+/*
   $('.animated-image').bind('inview', function (event, visible) {
     if (visible == true) {
       // element is now visible in the viewport
@@ -10,4 +12,6 @@ $(function(){
       // element has gone out of viewport
     }
   });
+*/
+
 });

@@ -1,7 +1,18 @@
 //preloader
 $( window ).load(function() {
-  setTimeout( function() {
-    //$('#page-loading').css('opacity','0')
-  }, 500);
+  // fade out on scroll
+  $(window).scroll(function() {
+      var el = $('.hero');    
+      var offset = el.offset();  
+      var opacity = ( (offset.top - el.height() ) / 400 ) * -1;
+      $('.hero').css('opacity', opacity );
+  });
+});
+
+
+// widow fix
+$(document).ready(function() {
+//all heading 1s
+    $('p').widowFix();
 });
 

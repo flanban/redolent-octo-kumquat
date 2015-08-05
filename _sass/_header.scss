@@ -27,9 +27,22 @@ body > header {
         a {
           color:inherit;
           padding: 4px 10px;
-        }
-        &.fancy-nav-item {
-          //background:rgba(0,0,0,.5);
+          &:hover {
+            padding:4px 9px;
+            border:1px solid #fff;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+          }
+          &.fancy-nav-item {
+            background:rgba(5,151,231,1);
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            &:hover {
+              border-color:#bedeef;
+            }
+          }
         }
       }
     } 
