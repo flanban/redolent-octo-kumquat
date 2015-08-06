@@ -14,17 +14,31 @@ body p {
   float:left;  
 }
 
-.clearfix:before,
 .clearfix:after {
-  content:"";
-  display:table;
+  content: "";
+  display: table;
+  clear: both;
 }
-.clearfix:after {
-  clear:both;
-}
+
 
 a {
   text-decoration:none;
+}
+//widths
+.width-28 {
+  width:28%;
+}
+.width-33 {
+  width:33%;
+}
+.width-38 {
+  width:38%;
+}
+.width-48 {
+  width:48%;
+}
+.width-52 {
+  width:52%;
 }
 
 

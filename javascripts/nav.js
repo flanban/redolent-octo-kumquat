@@ -4,23 +4,42 @@ $(function(){
       curDir = 'down',
       prevDir = 'up';
       headerHeight = header.outerHeight()
+      
+  function showNav() {
+    $(header).stop();
+  	$(header).animate({ top: -headerHeight }, 300);
+    prevDir = curDir;
+  }
+  
+  function hideNav() {
+    $(header).stop();
+    $(header).animate({ top: '0px' }, 300);
+    prevDir = curDir;
+  }
+
   $(window).scroll(function(){
     	if($(this).scrollTop() >= prevScroll){
-          curDir = 'down';
-          if(curDir != prevDir){
-          $(header).stop();
-    	  	$(header).animate({ top: -headerHeight }, 300);
-          prevDir = curDir;
-          }
+    	  curDir = 'down';
+        if(curDir != prevDir){
+          showNav()
+        }
       } else {
-          curDir = 'up';
-          if(curDir != prevDir){
-          $(header).stop();
-          $(header).animate({ top: '0px' }, 300);
-          prevDir = curDir;
-          }
+        curDir = 'up';
+        if(curDir != prevDir) {
+          hideNav()
+        }
       }
       prevScroll = $(this).scrollTop();
+  });
+  
+  //show nav if mouse goes near the top
+  $("body").on("mousemove",function(event) {
+    if (event.clientY < headerHeight) {
+      // do something
+      //hideNav()
+    } else {
+     // showNav()
+    }
   });
 
 })

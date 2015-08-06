@@ -17,8 +17,11 @@ body {
 .light {
   font-weight:300;
 }
+.semibold {
+  font-weight:600;
+}
 .bold {
-  font-weight:bold;
+  font-weight:700;
 }
 .italic {
   font-style:italic;
@@ -75,8 +78,16 @@ body {
 .type-on-a-circle {
   
 }
-
-
+.big-display-header { //proxNova, bold
+  font-family:"Open Sans";
+  font-size:36px;
+  font-weight:300;
+}
+.headline-1 {
+  font-family:"Open Sans";
+  font-size:24px;
+  font-weight:700; 
+}
 ///layout
 .text-center {
   text-align:center;
