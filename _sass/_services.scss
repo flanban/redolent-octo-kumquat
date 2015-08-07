@@ -82,6 +82,17 @@
         height:160px;
         top:50%;
         margin-top:-80px;
+        font-weight:300;
+        p {
+         //line-height:1.6;
+         color:#888;
+         font-style:italic;
+         span {
+           color:initial;
+           font-style:initial;
+         }
+        }
+        
         .headline-1 {
           margin-bottom:.5em;
         }
