@@ -19,5 +19,36 @@
 }
 
 .about-3 {
-  
+  > div {
+    width:33.333%;
+    height:100%;
+    float:left;
+    &:first-child {
+      background:#0597e7;
+    }
+    &:nth-child(2) {
+      background:#1ea1e9;
+    }
+    &:nth-child(3) {
+      background:#37acec;
+    }
+    #no-fat {
+      background-image:url('/images/no-fat.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;    
+    }
+    #move-faster {
+      background-image:url('/images/move-fast.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;    
+    }
+    #real-people {
+      background-image:url('/images/real-people.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;    
+    }
+  }
 }
