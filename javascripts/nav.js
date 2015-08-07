@@ -16,13 +16,15 @@ $(function(){
     $(header).animate({ top: '0px' }, 300);
     prevDir = curDir;
   }
-
+// && !$("#services-nav").hasClass("stuck")
   $(window).scroll(function(){
     	if($(this).scrollTop() >= prevScroll){
     	  curDir = 'down';
         if(curDir != prevDir){
           showNav()
         }
+      } else if ($("#services-nav").hasClass("stuck")) {
+        curDir = 'up';
       } else {
         curDir = 'up';
         if(curDir != prevDir) {

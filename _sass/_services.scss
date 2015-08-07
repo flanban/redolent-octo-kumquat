@@ -20,14 +20,16 @@
     width:100%;
     background-color:#0597e7;
     display:block;
-    position:absolute;
-    top:248px;
+    position: relative;
+    top: 80px;
   }
   h2 {
     margin-bottom:48px;
   }
   nav {
     width:100%;
+    background:#fff;
+    z-index:10;
     ul { 
       width:768px;
       margin:auto;
@@ -50,11 +52,23 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  
   > section {
     height:55vh;
     > div {
       height:100%;
+      position:relative;
+      p {
+        width: 300px;
+        position: absolute;
+        left: 50%;
+        margin-left: -150px;
+        height:120px;
+        top:50%;
+        margin-top:-120px;
+      }
     }
+  
     &#services-hr {
       > div {
         height:100%;

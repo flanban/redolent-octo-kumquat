@@ -8,6 +8,17 @@ body p {
   position:relative;
 }
 
+// waypoints sticky
+.stuck {
+  position:fixed;
+  top:0;
+}
+.hidden {
+  display:none;
+}
+.clear-both {
+  clear:both;
+}
 .uppercase { text-transform: uppercase; }
 
 .float-left {
