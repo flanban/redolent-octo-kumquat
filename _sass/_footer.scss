@@ -5,6 +5,7 @@
   padding:30px;
   //margin-bottom:30px;
   border:20px white solid;
+  border-bottom:60px white solid;
   z-index:20;
   h2 {
     border-bottom:1px solid #fff;
@@ -79,15 +80,13 @@ body > footer {
   border-top:1px solid rgba(0,0,0,.2);
   line-height:2.2;
   min-height: 800px;
+  font-weight:300;
+  
   > div {
     padding:0 40px 0 40px;
     border-left:1px solid rgba(0,0,0,.2);
     &:first-child {
       border:none;
-    }
-    p {
-      color:#676767;
-      font-weight:300;
       span {
         font-weight:400;
         font-style:italic;
