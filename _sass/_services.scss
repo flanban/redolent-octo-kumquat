@@ -62,14 +62,18 @@
     > div {
       height:100%;
       position:relative;
-      p {
+      
+      .text-holder {
         width: 300px;
         position: absolute;
         left: 50%;
         margin-left: -150px;
-        height:120px;
+        height:160px;
         top:50%;
-        margin-top:-120px;
+        margin-top:-80px;
+        .headline-1 {
+          margin-bottom:.5em;
+        }
       }
     }
   
