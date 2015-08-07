@@ -9,6 +9,9 @@ body p {
 }
 
 // waypoints sticky
+.sticky {
+  will-change: scroll-position;
+}
 .stuck {
   position:fixed;
   top:0;
