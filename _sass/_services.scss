@@ -36,11 +36,22 @@
       @extend .clearfix;
       li {
         float:left;
+        position:relative;
         width:33%;
         margin:.5em 0;
         margin-bottom:.5em;
         @extend .small-header;
-        
+        img.service-icon-active {
+          z-index:110;
+          position:absolute;
+          left:50%;
+          margin-left:-48px;
+        }
+        &.active {
+          img.service-icon-active {
+            display:block;
+          }
+        }
       }
     }    
   }

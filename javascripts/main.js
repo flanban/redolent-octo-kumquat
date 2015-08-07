@@ -43,6 +43,28 @@ $(document).ready(function() {
 
 
 
+// change service nav on scroll
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#services-nav ul li').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("data-anchor"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#services-nav ul li').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+
 
 
 
