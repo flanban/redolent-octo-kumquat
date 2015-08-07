@@ -1,4 +1,5 @@
 .about-1 {
+  -webkit-transform: translate3d(0,0,0);
   height:100vh;
   width:100%;
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/about-1.jpg');
@@ -8,6 +9,7 @@
   position:fixed;
   top:0;
   left:0;
+  z-index:-1;
 }
 
 .about-2 {
