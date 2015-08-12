@@ -102,18 +102,13 @@
   font-family:'Open Sans';
   z-index:100;
   position:relative;
-  
   .royalSlider {
-    background:
-      url('http://flanban.github.io/redolent-octo-kumquat/images/testimonial-fade.png') repeat-y left,
-      url('http://flanban.github.io/redolent-octo-kumquat/images/testimonial-fade-right.png') repeat-y right;
-      
     width: 100%;
     height: 300px;
-    
+
     section {
       padding:20px;
-      
+  
       p {
         font-size:24px;
       }
@@ -123,6 +118,7 @@
         font-weight:300;
       }
     }
+
   }
   
   
@@ -143,8 +139,8 @@
       letter-spacing:2px;
       margin: 0 26px;
     }
-    .next-testimonial-button {
-      
+    .next-testimonial-button, .prev-testimonial-button {
+      cursor:pointer;
     }
   }
 }
