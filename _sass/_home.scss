@@ -104,16 +104,24 @@
   position:relative;
   
   .royalSlider {
-    background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/testimonial-fade.png');
+    background:
+      url('http://flanban.github.io/redolent-octo-kumquat/images/testimonial-fade.png') repeat-y left,
+      url('http://flanban.github.io/redolent-octo-kumquat/images/testimonial-fade-right.png') repeat-y right;
+      
     width: 100%;
     height: 300px;
-    p {
-      font-size:24px;
-    }
-    span {
-      margin-bottom: 46px;
-      display: block;
-      font-weight:300;
+    
+    section {
+      padding:20px;
+      
+      p {
+        font-size:24px;
+      }
+      span {
+        margin-bottom: 46px;
+        display: block;
+        font-weight:300;
+      }
     }
   }
   
