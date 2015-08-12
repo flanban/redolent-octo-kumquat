@@ -55,9 +55,11 @@
 .about-4 {
   //height:100vh;
   background:rgba(255,255,255,.6);
+  text-align:center;
   
-  .big-display-header {
-    margin-top:80px;
+  > img {
+    margin:120px auto 80px auto;
+    display:block;
   }
   > p {
     margin:30px 0;
@@ -68,7 +70,7 @@
     height:auto;
     margin:auto;
     overflow:hidden;
-    margin-bottom:100px;
+    margin-bottom:120px;
     li {
       background:rgba(0,0,0,0.7);
       width:24%;
