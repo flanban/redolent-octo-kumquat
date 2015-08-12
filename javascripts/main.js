@@ -9,8 +9,10 @@ $( window ).load(function() {
         var el = $('.hero');    
         var offset = el.offset();
         var opacity = ( (offset.top - el.height() ) / 400 ) * -1;
-        if (opacity > 0) {
+        if (opacity > 0.001) {
           $('.hero').css('opacity', opacity );
+        } else {
+          $('.hero').css('opacity', 0 );
         }
       }
       

@@ -20,6 +20,8 @@
   position:relative;
 }
 .home-1 {
+  height:96vh; 
+  width:100%;
   will-change: opacity;
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/home-1.jpg');
   background-size: cover;
@@ -28,7 +30,6 @@
   position:fixed;
   top:0;
   left:0;
-  
   .text-holder {
     position:relative;
     height:219px;
@@ -45,6 +46,7 @@
       font-size:40px;
       letter-spacing:1px;
       font-size: 38px;
+      text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
     }
   }
   
@@ -65,8 +67,12 @@
   }
 }
 .home-2 {
-  margin-top:95vh;
+  margin-top:96vh;
   padding: 20px;
+  @media (max-width: 640px) {
+    height:auto;
+  }
+  
   > .text-holder {
     max-width:890px;
     margin:auto;
@@ -74,9 +80,18 @@
     top: 0;
     height:100%;
     padding-top:9%;
+    .down-arrow {
+      @media (max-width: 640px) {
+        display:none;
+      }
+    }
+
     > .text-holder { // the learn more area at the bottom
      width:365px;
      margin:auto;
+     @media (max-width: 640px) {
+       margin-bottom:80px;
+     }
     }
     p:nth-of-type(1) {
       margin-bottom:4%;
