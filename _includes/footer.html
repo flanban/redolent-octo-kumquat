@@ -9,9 +9,9 @@
     <p><span>twitter:</span> suitless</p>
   </div>
   <div class="contact-box clearfix">
-    <form method="post" action="" id="contact_form" class="clearfix">
+    <form action="mailer.php" method="POST" id="contact_form" class="clearfix">
     <input type="text" name="name" placeholder="Name" id="name" class="float-left">
-    <input type="email" name="email" placeholder="Email" id="email" class="float-left clear-both">
+    <input type="email" name="email" name="_replyto" placeholder="Email" id="email" class="float-left clear-both">
     <textarea name="message" placeholder="Tell us briefly about your company and what type of services you're interested in..." id="message" cols="40" rows="10"></textarea>
     <input class="submit" type="submit" value="Send">
     </form>
