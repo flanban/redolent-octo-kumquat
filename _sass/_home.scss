@@ -28,6 +28,26 @@
   position:fixed;
   top:0;
   left:0;
+  
+  .text-holder {
+    position:relative;
+    height:219px;
+    width:100%;
+    top:50%;
+    margin:-194px auto 0 auto;
+    text-align:center;
+    display:block;
+    img {
+      margin-bottom:28px;
+    }
+    p {
+      color:#fff;
+      font-size:40px;
+      letter-spacing:1px;
+      font-size: 38px;
+    }
+  }
+  
   .down-button-home {
     position:absolute;
     bottom:0;
