@@ -17,22 +17,29 @@ $(function(){
     prevDir = curDir;
   }
 // && !$("#services-nav").hasClass("stuck")
-  $(window).scroll(function(){
-    	if($(this).scrollTop() >= prevScroll){
-    	  curDir = 'down';
-        if(curDir != prevDir){
-          showNav()
-        }
-      } else if ($("#services-nav").hasClass("stuck")) {
-        curDir = 'up';
+  function checkPosition() {
+      if (window.matchMedia('(max-width: 767px)').matches) {
+        $(window).scroll(function(){
+          	if($(this).scrollTop() >= prevScroll){
+          	  curDir = 'down';
+              if(curDir != prevDir){
+                showNav()
+              }
+            } else if ($("#services-nav").hasClass("stuck")) {
+              curDir = 'up';
+            } else {
+              curDir = 'up';
+              if(curDir != prevDir) {
+                hideNav()
+              }
+            }
+            prevScroll = $(this).scrollTop();
+        });
       } else {
-        curDir = 'up';
-        if(curDir != prevDir) {
-          hideNav()
-        }
+        //...
       }
-      prevScroll = $(this).scrollTop();
-  });
+  }
+
   
   //show nav if mouse goes near the top
   $("body").on("mousemove",function(event) {
