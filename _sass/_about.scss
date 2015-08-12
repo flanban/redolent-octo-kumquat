@@ -30,15 +30,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  h4 {
+    margin-top:100px;
+    margin-bottom:1em;
+  }
   p {
     width:70%;
     margin:auto;
+    line-height:1.8;
+    
+    &:nth-of-type(2) {
+      margin-bottom:100px;
+    }
   } 
 }
 
 .about-3 {
   background:#fff;
+  h4 {
+    margin:100px 0 1em 0;
+  }
 }
 
 .about-4 {
