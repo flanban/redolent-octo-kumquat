@@ -8,6 +8,11 @@ body p {
   position:relative;
 }
 
+
+.hero-text {
+  will-change:opacity;
+}
+
 // waypoints sticky
 .sticky {
   will-change: scroll-position;

@@ -4,7 +4,7 @@ $( window ).load(function() {
   $(window).scroll(function() {
       if ($('.hero').length != 0) {
         var el = $('.hero');    
-        var offset = el.offset();  
+        var offset = el.offset();
         var opacity = ( (offset.top - el.height() ) / 400 ) * -1;
         $('.hero').css('opacity', opacity );
       }
