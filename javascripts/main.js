@@ -1,4 +1,7 @@
-//preloader
+
+
+
+
 $( window ).load(function() {
   // fade out on scroll
   $(window).scroll(function() {
@@ -15,6 +18,24 @@ $( window ).load(function() {
         var opacity = ( (offset.top - el.height() ) / 400 ) * -1;
         $('.hero-text').css('opacity', opacity );
       }
+  });
+  
+  
+  // testimonial slider
+  var slider = $(".royalSlider").data('royalSlider');
+  var slideCountEl = $(".rsSlideCount")
+  function updCount() {
+    slideCountEl.html( (slider.currSlideId+1) + '</sup>&frasl;<sub>' + slider.numSlides + '</sub>' );    
+  }
+  slider.ev.on('rsAfterSlideChange', updCount);
+  updCount();
+  
+  $(".next-testimonial-button").click(function() {
+    slider.next();    
+  });
+  
+  $(".prev-testimonial-button").click(function() {
+    slider.prev();    
   });
 });
 
