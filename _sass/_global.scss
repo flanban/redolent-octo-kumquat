@@ -142,51 +142,7 @@ body > section {
   width:100%;
 }
 
-.two-files-55-45 {
-  .a-file, .b-file {
-    position:absolute;
-    height:100%;
-  }
-  .a-file {
-    width:55%;
-    left:0;
-    .row-1 {
-      height:50%;
-    }
-    .row-2 {
-      height:50%;
-    }
-  }
-  .b-file {
-    width:45%;
-    left:55%;
-  }
-}
-.two-files-50-50 {
-  .a-file, .b-file {
-    position:absolute;
-    width:50%;
-    height:100%;
-  }
-  .a-file {
-    left:0;
-    .row-1 {
-      height:55%;
-    }
-    .row-2 {
-      height:45%;
-    }
-  }
-  .b-file {
-    left:50%;
-    .row-1 {
-      height:45%;
-    }
-    .row-2 {
-      height:55%;
-    }
-  }
-}
+
 .two-files-33-66 {
   .a-file, .b-file {
     position:absolute;
