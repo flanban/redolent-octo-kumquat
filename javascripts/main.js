@@ -31,8 +31,10 @@ $( window ).load(function() {
   function updCount() {
     slideCountEl.html( (slider.currSlideId+1) + '</sup>&frasl;<sub>' + slider.numSlides + '</sub>' );    
   }
-  slider.ev.on('rsAfterSlideChange', updCount);
-  updCount();
+  if ($('.royalSlider').length != 0) {
+    slider.ev.on('rsAfterSlideChange', updCount);
+    updCount();
+  }
   
   $(".next-testimonial-button").click(function() {
     slider.next();    
@@ -49,10 +51,11 @@ $(document).ready(function() {
 //all heading 1s
     $('p').widowFix();
     
-    var sticky = new Waypoint.Sticky({
-      element: $('.sticky')[0]
-    })
-    
+    if ($('.sticky').length != 0) {
+      var sticky = new Waypoint.Sticky({
+        element: $('.sticky')[0]
+      })
+    }
     var serviceNavHeight = $('#services-nav').outerHeight();
     
     $(".tax-button").click(function() {

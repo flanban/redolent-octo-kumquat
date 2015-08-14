@@ -17,28 +17,36 @@ $(function(){
     prevDir = curDir;
   }
 // && !$("#services-nav").hasClass("stuck")
-  function checkPosition() {
-      if (window.matchMedia('(max-width: 767px)').matches) {
-        $(window).scroll(function(){
-          	if($(this).scrollTop() >= prevScroll){
-          	  curDir = 'down';
-              if(curDir != prevDir){
-                showNav()
-              }
-            } else if ($("#services-nav").hasClass("stuck")) {
-              curDir = 'up';
-            } else {
-              curDir = 'up';
-              if(curDir != prevDir) {
-                hideNav()
-              }
-            }
-            prevScroll = $(this).scrollTop();
-        });
-      } else {
-        //...
-      }
+
+  function scrollNav() {
+    $(window).scroll(function(){
+       	if($(this).scrollTop() >= prevScroll){
+       	  curDir = 'down';
+           if(curDir != prevDir){
+             showNav()
+           }
+         } else if ($("#services-nav").hasClass("stuck")) {
+           curDir = 'up';
+         } else {
+           curDir = 'up';
+           if(curDir != prevDir) {
+             hideNav()
+           }
+         }
+         prevScroll = $(this).scrollTop();
+     });
   }
+  
+
+  function updateNav () {
+    if (window.matchMedia('(min-width: 768px)').matches) {
+    } else {
+    }
+  }
+  scrollNav();
+  $(window).resize(updateNav);
+  
+
 
   
   //show nav if mouse goes near the top
