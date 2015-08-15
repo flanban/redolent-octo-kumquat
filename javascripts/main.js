@@ -53,6 +53,7 @@ $(document).ready(function() {
   
   // fit text
   $('.circle-text').circleType({radius: 284});
+  $('.circle-text-shallow').circleType({radius: 480});
   $('.circle-text-dir1').circleType({radius: 284, dir:-1});
 
   
