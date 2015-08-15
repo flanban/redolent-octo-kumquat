@@ -66,43 +66,49 @@ $(document).ready(function() {
     }
     var serviceNavHeight = $('#services-nav').outerHeight();
     
+    function removeHash() { 
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+    }
+    
     $(".tax-button").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#services-tax").offset().top -serviceNavHeight
-        }, 300);
-        return false;
+      removeHash()
+      $('html, body').animate({
+        scrollTop: $("#services-tax").offset().top -serviceNavHeight
+      }, 300);
+      return false;
     });
     $(".law-button").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#services-law").offset().top -serviceNavHeight
-        }, 300);
-        return false;
+      removeHash()
+      $('html, body').animate({
+        scrollTop: $("#services-law").offset().top -serviceNavHeight
+      }, 300);
+      return false;
     });
     $(".hr-button").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#services-hr").offset().top -serviceNavHeight
-        }, 300);
-        return false;
+      removeHash()
+      $('html, body').animate({
+        scrollTop: $("#services-hr").offset().top -serviceNavHeight
+      }, 300);
+      return false;
     });
 });
 
 
-
-
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('#services-nav ul li').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("data-anchor"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#services-nav ul li').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
-}
+//services page nav
+$( window ).scroll(function() {
+  var scrollPos = $(document).scrollTop();
+  $('#services-nav ul li').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("data-anchor"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('#services-nav ul li').removeClass("active");
+          currLink.addClass("active");
+      }
+      else{
+          currLink.removeClass("active");
+      }
+  });
+});
 
 
 
