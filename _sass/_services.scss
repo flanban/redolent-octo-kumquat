@@ -1,6 +1,6 @@
 .service-anchor {
     display: block;
-    position: relative;
+    position: absolute;
     top: -154px;
     visibility: hidden;
 }
@@ -87,6 +87,7 @@
   
   > section {
     height:55vh;
+    position:relative;
     > div {
       height:100%;
       position:relative;
