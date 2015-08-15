@@ -1,10 +1,10 @@
 .about-1 {
   -webkit-transform: translate3d(0,0,0);
-  height:96vh;
+  height:45vh;
   width:100%;
-  background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/about-1.jpg');
+  background-image:url('/images/about-1.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   position:fixed;
   top:0;
@@ -24,12 +24,13 @@
 }
 
 .about-2 {
-  margin-top:96vh;
-  background-color: #0497e7;
+  margin-top:45vh;
+  background-color: #fff;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 160px 0;
   h4 {
     margin-top:100px;
     margin-bottom:1em;
@@ -54,7 +55,7 @@
 
 .about-4 {
   //height:100vh;
-  background:rgba(255,255,255,.6);
+  background:rgba(255,255,255,1);
   text-align:center;
   
   > img {
