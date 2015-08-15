@@ -5,12 +5,19 @@
   position: absolute;
   text-align: center;
   top:50%;
-  margin-top:-81px;
+  margin-top:-91px;
   p:nth-of-type(1) {
-    margin-bottom:24px;
+    //margin-bottom:24px;
   }
   p:nth-of-type(2) {
-    margin-top:24px;
+    //margin-top:24px;
+  }
+  .icon-font {
+    padding:15px;
+    font-size:60px;
+    color:#0497e7;
+    line-height: 1;
+    display: inline-block;
   }
 }
 
@@ -73,7 +80,14 @@
   @media (max-width: 640px) {
     height:auto;
   }
-  
+  .icon-font {
+    padding:15px;
+    font-size:48px;
+    color:#0497e7;
+    line-height: 1.4;
+    display: inline-block;
+    padding:15px;
+  }
   > .text-holder {
     max-width:890px;
     margin:auto;
@@ -81,7 +95,13 @@
     top: 0;
     height:100%;
     padding-top:9%;
+    
     .down-arrow {
+      margin-bottom:1em;
+      display:block;
+      height:11px;
+      width:25px;
+      margin:auto;
       @media (max-width: 640px) {
         display:none;
       }
@@ -114,6 +134,29 @@
     height:auto;
     padding: 0 60px 90px 60px;
   }
+  .button-cta {
+    text-align:center;
+    padding: 1.4em;
+    position:relative;
+    display:block;
+    color:#0497e7;
+    font-family:'BebasNeue-Bold';
+    text-transform:uppercase;
+    font-size:24px;
+    span {
+      text-transform:lowercase;
+      display:inline-block;
+      &.shape-font {
+        font-size:40px;
+        line-height: 1.4;
+        display: inline-block;
+        padding:0 15px;
+        vertical-align:middle;
+        color:initial;
+      }
+    }
+  }
+  
   .a-file, .b-file {
     position:absolute;
     height:100%;    
@@ -150,14 +193,15 @@
         text-align:center;
       }
       p {
-        max-width:495px;
+        width:345px;
         left: 50%;
-        margin-left:-247px;
-        top: 30%;   
+        margin-left:-178px;
+        top: 10%;   
+        text-align:center;
         @media (max-width: 640px) {
           left:0;
           margin-left:0;
-          top: 30%;
+          top: 10%;
           width: 50%;
           margin: auto;        
         } 
@@ -181,9 +225,10 @@
   width:100%;
  // height:225px;
   background-color:#0497e7;
-  padding: 160px 25%;
+  //padding: 160px 25%;
   font-family:'Open Sans';
   z-index:100;
+  padding-bottom: 30px;
   position:relative;
   @media (max-width: 640px) {
     padding: 100px 60px;
@@ -191,11 +236,11 @@
   
   .royalSlider {
     width: 100%;
-    height: 240px;
+    height: 220px;
 
     section {
-      padding:20px;
-  
+      padding: 90px 110px;  
+      
       p {
         font-size:24px;
       }
@@ -233,57 +278,44 @@
   }
 }
 .home-4 {
-  .vert-wrap {
-    width:560px;
-    height:90px;
-    top:50%;
-    position:absolute;
-    margin:-65px auto auto auto;
-    left: 50%;
-    margin-left:-270px;
-    .body-copy-display {
-      width: 330px;
-      position:relative;
-    }
-    .step-header {
-      top:0px;
-      position:relative;
-      margin: -22px 60px 0 0;
-    } 
+  height:100%;
+  .step-header {
+    position:relative;
+    top:0px;
+    margin:40px 0;
   }
+  
+ 
   .a-file, .b-file {
     position:absolute;
     width:50%;
     height:100%;
-
   }
-  .a-file {
-    left:0;
-    
-    .row-1 {
-      height:55%;
-      background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/quick-consult.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .row-2 {
-      height:45%;
+      
+  .row-1 {
+    height:35%;
+    background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/quick-consult.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .row-2 {
+    height:45%;
+    p.body-copy-display {
+      width:50%;
+      margin:auto;
+      margin-top:10px;
     }
   }
+  
   .b-file {
     left:50%;
     .row-1 {
-      height:45%;
-    }
-    .row-2 {
-      height:55%;
       background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/on-a-chair.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
     }
   }
+
+
 }
 .home-5 {
   .text-holder {
@@ -309,10 +341,16 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  .text-holder {
-    width:420px;
-    margin:auto;
-    padding:4% 0 0 0;
+  .step-header {
+    position:relative;
+    top: 120px;
+    display: block;
+    text-align: center;
+    
+    .icon-font {
+      display:block;
+      color:#fff;
+    }
     p {
       width:260px;
       margin:1em auto;

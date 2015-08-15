@@ -48,7 +48,15 @@ $( window ).load(function() {
 
 // widow fix
 $(document).ready(function() {
-//all heading 1s
+  
+  
+  
+  // fit text
+  $('.circle-text').circleType({radius: 284});
+  $('.circle-text-dir1').circleType({radius: 284, dir:-1});
+
+  
+  //all heading 1s
     $('p').widowFix();
     
     if ($('.sticky').length != 0) {
@@ -80,12 +88,6 @@ $(document).ready(function() {
 
 
 
-// change service nav on scroll
-$(document).ready(function () {
-    $(document).on("scroll", onScroll);
-    
-    
-});
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
@@ -101,6 +103,7 @@ function onScroll(event){
         }
     });
 }
+
 
 
 

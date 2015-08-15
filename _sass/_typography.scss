@@ -12,6 +12,13 @@ body {
   font-family:"Open Sans";
 }
 
+.icon-font {
+  font-family: 'evelethicons';
+}
+
+.shape-font {
+  font-family: 'evelethshapes';
+}
 
 //dumb type rules
 .light {
@@ -71,7 +78,7 @@ body {
 }
 .body-copy-display { //proxNova-light, 20
   font-family:"Open Sans";
-  font-size:16px;
+  font-size:15px;
   line-height:3.2;
 }
 .body-copy-display-bold { //proxNova, bold

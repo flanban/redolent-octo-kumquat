@@ -1,4 +1,9 @@
-
+.service-anchor {
+    display: block;
+    position: relative;
+    top: -154px;
+    visibility: hidden;
+}
 .services-1 {
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/services-1.jpg');
   background-size: cover;
