@@ -39,14 +39,20 @@
   left:0;
   .text-holder {
     position:relative;
-    height:219px;
     width:100%;
-    top:55%;
+    top:60%;
     margin:-194px auto 0 auto;
     text-align:center;
     display:block;
+    
+    .home-page-headline {
+      width:50%;
+      margin:auto;
+    }
+    
     img {
       margin-bottom:28px;
+      max-width:30%;
     }
     p {
       color:#fff;

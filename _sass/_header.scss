@@ -11,9 +11,12 @@ body > header {
   z-index:900;
   
   .header-logo {
-    top: 11px;
+    top: 14px;
     position: relative;
     left: 10px;
+    img {
+      height: 25px;
+    }
   }
   
   > nav {

@@ -52,13 +52,15 @@ $(document).ready(function() {
   
   
   // fit text
+  $(".home-page-headline").fitText(2.2, { minFontSize: '18px'});
+  
   $('.circle-text').circleType({radius: 284});
   $('.circle-text-shallow').circleType({radius: 480});
   $('.circle-text-dir1').circleType({radius: 284, dir:-1});
 
   
   //all heading 1s
-    $('p').widowFix();
+    $('p, .widowless').widowFix();
     
     if ($('.sticky').length != 0) {
       var sticky = new Waypoint.Sticky({
