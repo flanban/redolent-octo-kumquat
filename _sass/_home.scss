@@ -82,10 +82,12 @@
 }
 .home-2 {
   background:#fff;
-  margin-top:96vh;
   padding: 20px;
+  height:100%;
+  position:relative;
+ // top:96%;
   @media (max-width: 640px) {
-    height:auto;
+   // height:auto;
   }
   .icon-font {
     padding:15px;
