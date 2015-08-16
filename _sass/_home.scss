@@ -1,6 +1,9 @@
 
 ///// needs abstraction //////
-
+body {
+  position:relative;
+  top:96%;
+}
 .step-header {
   position: absolute;
   text-align: center;
