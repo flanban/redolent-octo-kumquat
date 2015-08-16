@@ -7,26 +7,22 @@
 }
 @font-face {
     font-family: 'evelethicons';
-    src: url('/fonts/evelethicons-webfont.eot');
-    src: url('/fonts/evelethicons-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/evelethicons-webfont.woff') format('woff'),
-         url('/fonts/evelethicons-webfont.ttf') format('truetype'),
-         url('/fonts/evelethicons-webfont.svg#evelethicons') format('svg');
+    src: url('../fonts/evelethicons-webfont.eot');
+    src: url('../fonts/evelethicons-webfont.eot?#iefix') format('embedded-opentype'),
+       //  url('../fonts/evelethicons-webfont.woff') format('woff'),
+        // url('../fonts/evelethicons-webfont.ttf') format('truetype'),
+         url('../fonts/evelethicons-webfont.svg#evelethicons') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
-
-
-
-
 @font-face {
     font-family: 'evelethshapes';
-    src: url('/fonts/evelethshapes-webfont.eot');
-    src: url('/fonts/evelethshapes-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/evelethshapes-webfont.woff') format('woff'),
-         url('/fonts/evelethshapes-webfont.ttf') format('truetype'),
-         url('/fonts/evelethshapes-webfont.svg#evelethshapes') format('svg');
+    src: url('../fonts/evelethshapes-webfont.eot');
+    src: url('../fonts/evelethshapes-webfont.eot?#iefix') format('embedded-opentype'),
+         //url('../fonts/evelethshapes-webfont.woff') format('woff'),
+        // url('../fonts/evelethshapes-webfont.ttf') format('truetype'),
+         url('../fonts/evelethshapes-webfont.svg#evelethshapes') format('svg');
     font-weight: normal;
     font-style: normal;
 
