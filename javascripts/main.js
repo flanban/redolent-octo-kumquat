@@ -53,6 +53,8 @@ $(document).ready(function() {
   
   // fit text
   $(".home-page-headline").fitText(2.2, { minFontSize: '18px'});
+  $(".home-page-graphic").fitText(.2, { minFontSize: '18px'});
+  
   
   $('.circle-text').circleType({radius: 284});
   $('.circle-text-shallow').circleType({radius: 480});

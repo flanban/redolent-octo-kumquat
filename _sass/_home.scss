@@ -40,8 +40,8 @@
   .text-holder {
     position:relative;
     width:100%;
-    top:60%;
-    margin:-194px auto 0 auto;
+    top:25%;
+    margin:0 auto 0 auto;
     text-align:center;
     display:block;
     
@@ -52,7 +52,7 @@
     
     img {
       margin-bottom:28px;
-      max-width:30%;
+      max-width:25%;
     }
     p {
       color:#fff;
@@ -66,11 +66,12 @@
   .down-button-home {
     position:absolute;
     bottom:0;
-    width:207px;
+    width: 20%;
     left:50%;
-    margin-left:-104px;
+    margin-left:-10%;
     opacity:.7;
     cursor:pointer;
+    display:block;
     &:hover {
       opacity:1;
     }
