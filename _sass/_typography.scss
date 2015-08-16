@@ -60,24 +60,24 @@ body {
 
 //fonts
 .tiny-header { //vinyl-regular, 24, tracked out
-  font-family:"BebasNeue-Bold";
+  font-family:"BebasNeue-Bold", 'helvetica', 'arial', sans-serif;
   font-size:16px;
   letter-spacing:3px;
   text-transform:uppercase;
   margin-bottom:1em;
 }
 .small-header { //vinyl-regular, 24, tracked out
-  font-family:"BebasNeue-Bold";
+  font-family:"BebasNeue-Bold", 'helvetica', 'arial', sans-serif;
   font-size:24px;
   letter-spacing:4px;
   text-transform:uppercase;
 }
 .body-copy { //proxNova-light, 20
-  font-family:"Open Sans";
+  font-family:"Open Sans", 'helvetica', 'arial', sans-serif;
   font-size:14px;
 }
 .body-copy-display { //proxNova-light, 20
-  font-family:"Open Sans";
+  font-family:"Open Sans", 'helvetica', 'arial', sans-serif;
   font-size:15px;
   line-height:3.2;
 }
@@ -88,12 +88,12 @@ body {
   
 }
 .big-display-header { //proxNova, bold
-  font-family:"BebasNeue-Bold";
+  font-family:"BebasNeue-Bold", 'helvetica', 'arial', sans-serif;
   font-size:36px;
   font-weight:300;
 }
 .headline-1 {
-  font-family:"Open Sans";
+  font-family:"Open Sans", 'helvetica', 'arial', sans-serif;
   font-size:24px;
   font-weight:700; 
   span.service {
