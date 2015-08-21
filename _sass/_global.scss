@@ -13,6 +13,23 @@ body p {
   will-change:opacity;
 }
 
+.divider {
+  position:relative;
+  width:100%;
+  height:1px;
+  display:block;
+  z-index:10;
+  background:#fff;
+  &:after {
+    content:"";
+    width: 90%;
+    margin:auto;
+    height:1px;
+    background:#ddd;
+    display:block;
+  }
+}
+
 // waypoints sticky
 .sticky {
   will-change: scroll-position;

@@ -60,7 +60,7 @@ body { // need to namespace this
     float:right;
     
     p {
-      padding: 2px;
+      padding:4px 2px 0px 2px;
       color:#aaa;
     }
     > li {
@@ -70,32 +70,56 @@ body { // need to namespace this
       vertical-align:top;
       margin-left:-4px;//whitespace bug fix
       min-height:100px;
-      padding:28px 4px;
+      padding:28px 0px;
       border: 4px solid white;
       //border-bottom:0px;
+      &:nth-last-of-type(-n+2) {
+        border-bottom:0px solid white;
+      }
       img {
         display:inline-block;
         vertical-align:middle;
+        width: 100%;
+        height: auto;width: 100%;
+        height: auto;
       }
     }
   }
 }
 .home-3 {
+  .quote-1 {
+    color:#00a6f3;
+  }
   > div {
     display:inline-block;
     width:49%;
     vertical-align: middle;
-    padding: 60px 110px 110px 110px; 
+    padding: 90px 30px 50px 110px; 
+    > * {
+      max-width:420px;
+    }
   }
 }
 
 .home-4 {
   > h4 {
     text-align:center;
+    margin:70px 0 40px 0;
   }
   ul {
+    margin-bottom:110px;
+    text-align: center;
     li {
       display:inline-block;
+      margin-right:30px;
+      &:last-child {
+        margin-right:0px;        
+      }
+      > img {
+        border-bottom:1px solid #ccc;
+        padding-bottom:18px;
+        margin-bottom:18px;        
+      }
     }
   }
   > img {
@@ -104,16 +128,55 @@ body { // need to namespace this
   > div {
     > div {
       display:inline-block;
+      vertical-align:top;
       width:49%;
-      padding:120px;
+      padding: 0px 80px 0px 80px;
+      p {
+        padding-right: 50%;
+      }
     }
     > img {
       width:49%;
+      padding: 0px 00px 90px 260px;
+    }
+    &#home-law {
+      img {
+        padding-bottom:0;
+      }
+    }
+    &#home-tax {
+      text-align:right;
+      > div {
+        p {
+          padding-left: 50%;
+          padding-right:0;
+        }
+      }
+      > img {
+        padding: 0px 260px 120px 00px;
+      }
     }
   }
 }
 .home-5 {
   text-align:center;
+  padding-top:60px;
 }
-.home-6 {
+.grow-gracefully {
+  height:285px;
+  position:relative;
+  h2 {
+    font-size:48px;
+    color:#00a6f3;
+    position:absolute;
+    bottom:40px;
+    left:15%;
+    text-transform:uppercase;
+  }
+}
+.grow-gracefully.home {
+  background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/home-2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

@@ -1,25 +1,24 @@
 body > footer {
   z-index:100;
-  border-top:1px solid rgba(0,0,0,.2);
   font-weight:300;
   background:#fff;
   position:relative;
-  
+  padding-bottom:64px;
   > * {
     display:inline-block;
     vertical-align:top;
   }
   
   #contact {
-    border-bottom:1px solid #ddd;
+    text-align: right;
     z-index:20;
-    padding-bottom:24px;
-    margin:24px 0;
+    //padding-bottom:24px;
+    margin:64px 0;
+    padding:0 64px;
     width: 100%;
+    font-size:26px;
+    @extend .semibold; // !optional;    
     h2 {
-      width:70%;
-      font-size:26px;
-      color:#bbb;
       text-align:right;
       display:inline-block;
       padding-right: 18px;
@@ -34,25 +33,51 @@ body > footer {
       color:#fff;
       text-align:center;
       vertical-align: top;
-      top: 7px;
+      top: 0px;
     }
   }
 
-  .footer-info, .footer-links {
-    width:30%;
+  .divider {
+    margin-bottom:64px;
+  }
+
+  .footer-links {
+    width:22%;
+    @extend .semibold;
+    li {
+      padding:8px 18px;
+    }
+  }
+  .footer-info {
+    width:24%;
+    padding:0 0 0 64px;
+    border:none;
+    img {
+      margin-left: -38px;
+    }
   }
   .footer-maps {
-    width:38%;
-  }
-  > div {
-    border-left:1px solid rgba(0,0,0,.2);
-    &:first-child {
-      border:none;
-      span {
-        font-weight:400;
-        font-style:italic;
-        color:#000;
+    width:50%;
+    text-align:left;
+    padding-left: 18px;
+    > div {
+      display:inline-block;
+      vertical-align:top;
+      width:252px;
+      margin:auto;
+      margin-bottom:24px;
+      &:first-child {
+       margin-right:18px; 
+      }
+      a {
+        img {
+          width:252px;
+          height:154px;
+        }
       }
     }
+  }
+  > * {
+    border-left:1px solid rgba(0,0,0,.1);
   }
 }

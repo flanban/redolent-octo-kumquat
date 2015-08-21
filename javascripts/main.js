@@ -62,7 +62,7 @@ $(document).ready(function() {
 
   
   //all heading 1s
-    $('p, .widowless').widowFix();
+    $('p, .widowless, h5').widowFix();
     
     if ($('.sticky').length != 0) {
       var sticky = new Waypoint.Sticky({
