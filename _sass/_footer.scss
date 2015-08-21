@@ -14,7 +14,7 @@ body > footer {
     border-bottom:1px solid #ddd;
     z-index:20;
     padding-bottom:24px;
-    margin-bottom:24px;
+    margin:24px 0;
     width: 100%;
     h2 {
       width:80%;
@@ -22,6 +22,7 @@ body > footer {
       color:#bbb;
       text-align:right;
       display:inline-block;
+      padding-right: 18px;
       span {
         color:#00a6f3;
       }
@@ -29,9 +30,11 @@ body > footer {
     p {
       display:inline-block;
       background:#00a6f3;
-      padding:10px 20px;
+      padding: 20px 50px;
       color:#fff;
       text-align:center;
+      vertical-align: top;
+      top: 7px;
     }
   }
 
