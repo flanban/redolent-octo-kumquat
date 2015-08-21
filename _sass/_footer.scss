@@ -17,7 +17,7 @@ body > footer {
     margin:24px 0;
     width: 100%;
     h2 {
-      width:80%;
+      width:70%;
       font-size:26px;
       color:#bbb;
       text-align:right;
@@ -41,11 +41,9 @@ body > footer {
   .footer-info, .footer-links {
     width:30%;
   }
-  
   .footer-maps {
     width:38%;
   }
-  
   > div {
     border-left:1px solid rgba(0,0,0,.2);
     &:first-child {
