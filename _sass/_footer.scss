@@ -1,105 +1,49 @@
-#contact {
-  background-color:#fff;
-  //color:#fff;
+body > footer {
+  z-index:100;
+  border-top:1px solid rgba(0,0,0,.2);
+  font-weight:300;
+  background:#fff;
   position:relative;
-  padding:30px;
-  //margin-bottom:30px;
-  //border:20px white solid;
-  //border-bottom:60px white solid;
-  z-index:20;
-  h2 {
-    border-bottom:1px solid #ddd;
-    padding-bottom:54px;
-    margin-bottom:24px;
-    margin-top: 32px;
-    font-size:46px;
-    color:#bbb;
-    span {
-      color:initial;
-    }
-  }
-  .big-phone {
-    font-size:48px;
-    font-style:italic;
-    font-weight:200;
-    margin-bottom:0;
-  }
-  .headline-1 {
-    color:#DDD;
-  }
-  .contact-text {
-   width:40%;
-   float:left;
-   line-height:2.2;
-   padding: 60px 50px;
-   h3 {
-     max-width: 310px;
-     line-height:initial;
-     margin-bottom:1em;
-    font-size:18px;
-   }
-   p {
-     span {
-       font-weight:600;
-       font-style:italic;
-       color:#333; 
-     }
-   }
+  
+  > * {
+    display:inline-block;
+    vertical-align:top;
   }
   
-  .contact-box {
-    width:60%;
-    float:left;
-    background:#474747;
-    form {
-      padding:15px 25px;
-      input,textarea {
-        //margin:5px;
-        padding: 10px;
-        border: 12px solid #474747;
-        background-color: #555;
-        font-size:16px;
-        &:focus {
-          outline: 0;
-        }
+  #contact {
+    border-bottom:1px solid #ddd;
+    z-index:20;
+    padding-bottom:24px;
+    margin-bottom:24px;
+    width: 100%;
+    h2 {
+      width:80%;
+      font-size:26px;
+      color:#bbb;
+      text-align:right;
+      display:inline-block;
+      span {
+        color:#00a6f3;
       }
-      input {
-        border-left:none;
-        width:45%;
-        
-        &.submit {
-          width:100%;
-          border: none;
-          outline: none;
-          height:40px;
-          background:#0597e7;
-          color:#fff;
-          @extend .small-header;
-        }
-      }
-      textarea {
-        border-right:none;
-        width:55%;
-        line-height:1.6;
-        font-style:italic;
-      }
-      
+    }
+    p {
+      display:inline-block;
+      background:#00a6f3;
+      padding:10px 20px;
+      color:#fff;
+      text-align:center;
     }
   }
-}
-body > footer {
-  z-index:20;
-  position:relative;
-  z-index:100;
-  margin:auto;
-  padding:60px 90px;
-  border-top:1px solid rgba(0,0,0,.2);
-  line-height:2.2;
-  min-height: 800px;
-  font-weight:300;
+
+  .footer-info, .footer-links {
+    width:30%;
+  }
+  
+  .footer-maps {
+    width:38%;
+  }
   
   > div {
-    padding:0 40px 0 40px;
     border-left:1px solid rgba(0,0,0,.2);
     &:first-child {
       border:none;
