@@ -40,11 +40,11 @@ body { // need to namespace this
 }
 .home-2 {
   min-height:230px;
-
+  background:#f5f5f5;
+  padding-bottom: 0;
   > div {
     display:inline-block;
     vertical-align: middle;
-    background:#f5f5f5;
   }
   .left {
     width:60%;
@@ -56,15 +56,23 @@ body { // need to namespace this
     min-height:230px;
     display:inline-block;
     vertical-align:top;
+    background:#fff;
+    float:right;
+    
+    p {
+      padding: 2px;
+      color:#aaa;
+    }
     > li {
       background:#f5f5f5;
-      width:50%;
+      width:49%;
       display:inline-block;
       vertical-align:top;
       margin-left:-4px;//whitespace bug fix
       min-height:100px;
-      padding: 28px;
+      padding:28px 4px;
       border: 4px solid white;
+      //border-bottom:0px;
       img {
         display:inline-block;
         vertical-align:middle;
