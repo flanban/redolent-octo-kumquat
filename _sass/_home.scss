@@ -183,23 +183,35 @@ body { // need to namespace this
       vertical-align:top;
       width:49%;
       padding: 0px 80px 50px 80px;
+      @media(max-width: 660px) {
+        width: 100%;
+        text-align:center;
+      }
       p {
         padding-right: 50%;
+        @media(max-width: 660px) {
+          padding-right: 0%;
+        }
       }
       > img {
         max-width:24px;
+        @media(max-width: 660px) {
+          display:none;
+        }
       }
     }
     > img {
       width:49%;
       @media(max-width: 660px) {
-        padding: 0px 00px 45px 260px;
+        display:none;
       }
     }
     &#home-law {
-      margin-top:-60px;
       img {
         padding-bottom:0;
+      }
+      @media(min-width: 660px) {
+        margin-top:-60px;
       }
     }
     &#home-tax {
@@ -208,6 +220,9 @@ body { // need to namespace this
         p {
           padding-left: 50%;
           padding-right:0;
+          @media(max-width: 660px) {
+            padding-left: 0%;
+          }
         }
       }
       > img {
