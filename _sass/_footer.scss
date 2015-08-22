@@ -21,6 +21,7 @@ body > footer {
     @extend .semibold; // !optional; 
     @media(max-width: 660px) {
       text-align:center;
+      padding:0;
     }
     
     h2 {
