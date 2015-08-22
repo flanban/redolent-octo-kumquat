@@ -186,6 +186,16 @@ body { // need to namespace this
       color: #00a6f3;
     }
   }
+  h4 {
+    @media(max-width: 660px) {
+      font-size:x-large;
+    }  
+  }
+  p {
+    @media(max-width: 660px) {
+      font-size:larger;
+    }  
+  }
   ul {
     margin-bottom:110px;
     text-align: center;
@@ -266,10 +276,15 @@ body { // need to namespace this
 .home-5 {
   text-align:center;
   padding:60px;
-  @media(max-width: 660px) {
-    padding:80px;
+  @media(max-width: 480px) {
+    padding:80px 30px;
     h5 {
-      color:#00a6f3;      
+      color:#00a6f3;   
+    }
+  }
+  @media(max-width: 480px) {
+    h5 {
+      font-size:xx-large;      
     }
   }
 }

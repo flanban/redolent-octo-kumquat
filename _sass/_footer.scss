@@ -19,12 +19,10 @@ body > footer {
     width: 100%;
     font-size:26px;
     @extend .semibold; // !optional; 
-    @media(max-width: 880px) {
-      font-size:18px;
-    } 
     @media(max-width: 660px) {
       text-align:center;
-    }  
+    }
+    
     h2 {
       text-align:right;
       display:inline-block;
@@ -32,6 +30,10 @@ body > footer {
       margin-bottom: 12px;
       span {
         color:#00a6f3;
+      }
+      @media(max-width: 660px) {
+        text-align:inherit;
+        padding-right:0;      
       }
     }
     p {
@@ -53,17 +55,7 @@ body > footer {
     margin-bottom:64px;
   }
 
-  .footer-links {
-    width:22%;
-    margin-bottom:36px;
-    @extend .semibold;
-    li {
-      padding:8px 18px;
-    }
-    @media(max-width: 959px) {
-      width:49%;
-    }
-  }
+
   .footer-info {
     width:24%;
     padding:0 0 0 64px;
@@ -74,13 +66,26 @@ body > footer {
     @media(max-width: 959px) {
       width:49%;
     }
+    @media(max-width: 660px) {
+      width:0%;
+    }
   }
-  .footer-maps {
+  .footer-links {
+    width:22%;
+    margin-bottom:36px;
+    @extend .semibold;
+    li {
+      padding:8px 18px;
+    }
+    @media(max-width: 959px) {
+      width:0%;
+    }
+  }  .footer-maps {
     width:50%;
     text-align:left;
     padding-left: 18px;
     @media(max-width: 959px) {
-      width:100%;
+      width:0%;
     }
     > div {
       display:inline-block;
