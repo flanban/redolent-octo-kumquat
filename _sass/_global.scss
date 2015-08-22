@@ -30,6 +30,19 @@ body p {
   }
 }
 
+.grow-gracefully {
+  height:285px;
+  position:relative;
+  h2 {
+    font-size:48px;
+    color:#00a6f3;
+    position:absolute;
+    bottom:40px;
+    left:15%;
+    text-transform:uppercase;
+  }
+}
+
 // waypoints sticky
 .sticky {
   will-change: scroll-position;

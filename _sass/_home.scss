@@ -80,7 +80,6 @@ body { // need to namespace this
         display:inline-block;
         vertical-align:middle;
         width: 100%;
-        height: auto;width: 100%;
         height: auto;
       }
     }
@@ -162,18 +161,7 @@ body { // need to namespace this
   text-align:center;
   padding-top:60px;
 }
-.grow-gracefully {
-  height:285px;
-  position:relative;
-  h2 {
-    font-size:48px;
-    color:#00a6f3;
-    position:absolute;
-    bottom:40px;
-    left:15%;
-    text-transform:uppercase;
-  }
-}
+
 .grow-gracefully.home {
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/home-2.jpg');
   background-size: cover;
