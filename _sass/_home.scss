@@ -160,7 +160,9 @@ body { // need to namespace this
     }
     > img {
       width:49%;
-      padding: 0px 00px 45px 260px;
+      @media(max-width: 660px) {
+        padding: 0px 00px 45px 80px;
+      }
     }
     &#home-law {
       margin-top:-60px;

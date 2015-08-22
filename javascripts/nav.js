@@ -1,4 +1,18 @@
 $(function(){
+  
+  var waitForFinalEvent = (function () {
+    var timers = {};
+    return function (callback, ms, uniqueId) {
+      if (!uniqueId) {
+        uniqueId = "Don't call this twice without a uniqueId";
+      }
+      if (timers[uniqueId]) {
+        clearTimeout (timers[uniqueId]);
+      }
+      timers[uniqueId] = setTimeout(callback, ms);
+    };
+  })();
+  
   header = $('body > header')
   var prevScroll = 0,
       curDir = 'down',
@@ -37,8 +51,7 @@ $(function(){
            }
          }
          prevScroll = $(this).scrollTop();
-         headerHeight = header.outerHeight()
-         
+         headerHeight = header.outerHeight();
      });
   }
   
@@ -51,35 +64,20 @@ $(function(){
 
   function updateNav() {
     if (window.matchMedia('(min-width: 768px)').matches) {
-      alert(3)
       scrollNav();
     } else {
       staticNav();
     }
   }
   
-  
-  var waitForFinalEvent = (function () {
-    var timers = {};
-    return function (callback, ms, uniqueId) {
-      if (!uniqueId) {
-        uniqueId = "Don't call this twice without a uniqueId";
-      }
-      if (timers[uniqueId]) {
-        clearTimeout (timers[uniqueId]);
-      }
-      timers[uniqueId] = setTimeout(callback, ms);
-    };
-  })();
-  
   updateNav();
   
   // turn off/on nav based on device width
   $(window).resize(function () {
       waitForFinalEvent(function(){
-        alert('Resize...');
-        updateNav()
-      }, 500);
+        updateNav();
+      }, 500, "wtf");
+      
   });
   
 

@@ -18,7 +18,10 @@ body > footer {
     padding:0 64px;
     width: 100%;
     font-size:26px;
-    @extend .semibold; // !optional;    
+    @extend .semibold; // !optional; 
+    @media(max-width: 880px) {
+      font-size:18px;
+    }   
     h2 {
       text-align:right;
       display:inline-block;
@@ -35,6 +38,9 @@ body > footer {
       text-align:center;
       vertical-align: top;
       top: 0px;
+      @media(max-width: 880px) {
+        top:-6px;
+      }
     }
   }
 
@@ -48,6 +54,9 @@ body > footer {
     li {
       padding:8px 18px;
     }
+    @media(max-width: 959px) {
+      width:49%;
+    }
   }
   .footer-info {
     width:24%;
@@ -56,11 +65,17 @@ body > footer {
     img {
       margin-left: -38px;
     }
+    @media(max-width: 959px) {
+      width:49%;
+    }
   }
   .footer-maps {
     width:50%;
     text-align:left;
     padding-left: 18px;
+    @media(max-width: 959px) {
+      width:100%;
+    }
     > div {
       display:inline-block;
       vertical-align:top;
