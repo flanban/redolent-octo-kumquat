@@ -44,6 +44,7 @@ $(function(){
   
   function staticNav() {
     $(window).unbind('scroll');
+    headerHeight = header.outerHeight()
     hideNav();
   }
   
@@ -78,7 +79,7 @@ $(function(){
       waitForFinalEvent(function(){
         alert('Resize...');
         updateNav()
-      }, 500, "some unique string");
+      }, 500);
   });
   
 
