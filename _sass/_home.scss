@@ -59,6 +59,9 @@ body { // need to namespace this
     &:hover {
       opacity:1;
     }
+    @media(max-width: 767px) {
+      display:none;
+    }
   }
 }
 .home-2 {
@@ -142,13 +145,18 @@ body { // need to namespace this
       width: 100%;
       padding: 60px 15% 0px 15%;
     }
+    @media(max-width: 480px) {
+      width: 100%;
+      padding: 60px 21px 0px 21px;
+    }
   }
 }
 
 .home-4 {
   > h4 {
     text-align:center;
-    margin:70px 0 40px 0;
+    margin: 70px auto 40px auto;
+    width: 270px;
   }
   ul {
     margin-bottom:110px;
