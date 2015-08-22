@@ -5,6 +5,7 @@ $( window ).load(function() {
   $('.hero').height(heroHeight - 30)
   
   // fade out on scroll
+  /*
   $(window).scroll(function() {
       if ($('.hero').length != 0) {
         var el = $('.hero');    
@@ -24,6 +25,7 @@ $( window ).load(function() {
         $('.hero-text').css('opacity', opacity );
       }
   });
+  */
   
   
   // testimonial slider
