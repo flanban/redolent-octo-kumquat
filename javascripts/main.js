@@ -1,4 +1,9 @@
 $( window ).load(function() {
+  
+  //set hero height
+  var heroHeight = $('.hero').height();
+  $('.home-2').css('margin-top', heroHeight)
+  
   // fade out on scroll
   $(window).scroll(function() {
       if ($('.hero').length != 0) {

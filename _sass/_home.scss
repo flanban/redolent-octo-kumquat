@@ -1,7 +1,6 @@
 
 body { // need to namespace this
   position:relative;
-  top:96%;
   > section {
     background:#fff;
     width:100%;
@@ -20,7 +19,7 @@ body { // need to namespace this
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  padding-bottom:0px;
   .down-button {
     position:absolute;
     bottom:0;
@@ -42,6 +41,7 @@ body { // need to namespace this
   min-height:230px;
   background:#f5f5f5;
   padding-bottom: 0;
+  
   > div {
     display:inline-block;
     vertical-align: middle;
