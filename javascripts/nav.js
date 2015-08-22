@@ -88,7 +88,7 @@ $(function(){
       headerHeight = header.outerHeight()
       $(header).animate({
           top: "0"
-      }, 300);
+      }, 150);
       $(this).one("click", hideMobileNav);
   }
   function hideMobileNav() {
