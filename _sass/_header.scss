@@ -45,19 +45,25 @@ body > header {
   .si-icons { // mobile hamburger
     display: none;
     position: fixed;
-    right: 16px;
-    top:8px;
-    height: 52px;
-    width: 52px;
+    right: 0px;
+    top:0px;
+    height: 64px;
+    width: 84px;
+    margin:9px;
     @media(max-width: 768px) {
       display: block;      
     }
     span {
       background:rgba(0,0,0,.5);
-      top: -40px;
+      //top: -40px;
       position: relative;
-      right: 54px;
-      width: 84px;
+      //right: 54px;
+      height: inherit;
+      width: inherit;
+      margin:0;
+      svg {
+        width: inherit;
+      }
     }
   }
   > nav {
