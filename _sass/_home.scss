@@ -133,6 +133,9 @@ body { // need to namespace this
       p {
         padding-right: 50%;
       }
+      > img {
+        max-width:24px;
+      }
     }
     > img {
       width:49%;
