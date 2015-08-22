@@ -21,11 +21,15 @@ body > footer {
     @extend .semibold; // !optional; 
     @media(max-width: 880px) {
       font-size:18px;
-    }   
+    } 
+    @media(max-width: 660px) {
+      text-align:center;
+    }  
     h2 {
       text-align:right;
       display:inline-block;
       padding-right: 18px;
+      margin-bottom: 12px;
       span {
         color:#00a6f3;
       }

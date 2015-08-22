@@ -153,10 +153,14 @@ body { // need to namespace this
 }
 
 .home-4 {
+  padding-bottom:35px;
   > h4 {
     text-align:center;
     margin: 70px auto 40px auto;
     width: 270px;
+    @media(max-width: 660px) {
+      color: #00a6f3;
+    }
   }
   ul {
     margin-bottom:110px;
@@ -237,6 +241,9 @@ body { // need to namespace this
   padding:60px;
   @media(max-width: 660px) {
     padding:80px;
+    h5 {
+      color:#00a6f3;      
+    }
   }
 }
 
