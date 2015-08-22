@@ -20,6 +20,21 @@ body { // need to namespace this
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom:0px;
+  .text-holder {
+    position:absolute;
+    max-width:420px;
+    top:160px;
+    left:43%;
+    margin-left: -220px;
+    h2 {
+      color:#00a6f3;      
+      font-size:48px;
+    }
+    h3 {
+      color:#fff;
+      font-size:20px;
+    }
+  }
   .down-button {
     position:absolute;
     bottom:0;

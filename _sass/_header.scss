@@ -38,9 +38,9 @@ body > header {
       @media(max-width: 768px) {
         height: 40px;
         margin-top:24px;
+        opacity:0;
       }
     }
-
   } 
   .si-icons { // mobile hamburger
     display: none;
@@ -117,5 +117,16 @@ body > header {
       }
     } 
   }
-  
+}
+.header-logo-mobile {
+    height:96px;
+    top: 22px;
+    position: absolute;
+    left: 30px;
+    display:inline-block;
+    z-index:90;
+    
+    @media(min-width: 768px) {
+      display:none;
+    }
 }
