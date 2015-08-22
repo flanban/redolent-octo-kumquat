@@ -75,7 +75,8 @@ $(function(){
   // turn off/on nav based on device width
   $(window).resize(function () {
       waitForFinalEvent(function(){
-        updateNav();
+        
+        // updateNav();
       }, 500, "wtf");
       
   });
