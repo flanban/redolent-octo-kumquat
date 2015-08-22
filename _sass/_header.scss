@@ -49,7 +49,8 @@ body > header {
     top:0px;
     height: 64px;
     width: 84px;
-    margin:9px;
+    padding:9px;
+    box-sizing: initial;
     @media(max-width: 768px) {
       display: block;      
     }
