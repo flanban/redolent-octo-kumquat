@@ -39,7 +39,12 @@ body p {
     position:absolute;
     bottom:40px;
     left:15%;
+    line-height:1;
     text-transform:uppercase;
+    @media(max-width: 660px) {
+      font-size:40px;
+
+    }
   }
 }
 

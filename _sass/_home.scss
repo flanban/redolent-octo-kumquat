@@ -79,6 +79,15 @@ body { // need to namespace this
     @media(max-width: 959px) {
       width:100%;
     }
+    @media(max-width: 660px) {
+      h4 {
+        font-size:x-large;
+        width:80%;
+      }
+      p {
+        font-size:larger;
+      }
+    }
     @media(max-width: 420px) {
       padding: 60px 30px;
     }
@@ -150,6 +159,21 @@ body { // need to namespace this
       padding: 60px 21px 0px 21px;
     }
   }
+  .right {
+    @media(max-width: 480px) {
+      font-size: larger;
+      h4 {
+        font-size:x-large;
+      }
+    } 
+  }
+  .left {
+    h5 {
+      @media(max-width: 480px) {
+        font-size: xx-large;
+      }
+    }    
+  }
 }
 
 .home-4 {
@@ -165,6 +189,9 @@ body { // need to namespace this
   ul {
     margin-bottom:110px;
     text-align: center;
+    @media(max-width: 768px) {
+      margin-bottom:90px;
+    }
     li {
       display:inline-block;
       margin-right:30px;

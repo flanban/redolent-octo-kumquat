@@ -44,6 +44,7 @@ body > footer {
       top: 0px;
       @media(max-width: 880px) {
         top:-6px;
+        padding: 20px 30px;
       }
     }
   }
@@ -54,6 +55,7 @@ body > footer {
 
   .footer-links {
     width:22%;
+    margin-bottom:36px;
     @extend .semibold;
     li {
       padding:8px 18px;
