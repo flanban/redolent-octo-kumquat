@@ -129,7 +129,7 @@ body { // need to namespace this
       display:inline-block;
       vertical-align:top;
       width:49%;
-      padding: 30px 80px 0px 80px;
+      padding: 0px 80px 0px 80px;
       p {
         padding-right: 50%;
       }
@@ -139,6 +139,7 @@ body { // need to namespace this
       padding: 0px 00px 45px 260px;
     }
     &#home-law {
+      margin-top:-60px;
       img {
         padding-bottom:0;
       }
