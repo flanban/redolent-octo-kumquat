@@ -21,6 +21,7 @@ $(function(){
 
   //show/hide nav
   function scrollNav() {
+    
     $(window).scroll(function(){
        	if($(this).scrollTop() >= prevScroll){
        	  curDir = 'down';
@@ -36,6 +37,8 @@ $(function(){
            }
          }
          prevScroll = $(this).scrollTop();
+         headerHeight = header.outerHeight()
+         
      });
   }
   
@@ -47,8 +50,8 @@ $(function(){
 
   function updateNav() {
     if (window.matchMedia('(min-width: 768px)').matches) {
-      scrollNav();
       alert(3)
+      scrollNav();
     } else {
       staticNav();
     }
@@ -80,10 +83,24 @@ $(function(){
   
 
   // hamburger icon
-  $(".hamburger").click(function() {
-    showNav()
-  });
 
+  function showMobileNav() {
+      headerHeight = header.outerHeight()
+      $(header).animate({
+          top: "0"
+      }, 300);
+      $(this).one("click", hideMobileNav);
+  }
+  function hideMobileNav() {
+      $(header).animate({
+          top: -headerHeight
+      }, 300);
+      $(this).one("click", showMobileNav);
+  }
+  $(".hamburger").one("click", showMobileNav);
+  
+  
+  
   
   //show nav if mouse goes near the top
   $("body").on("mousemove",function(event) {

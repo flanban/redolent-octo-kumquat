@@ -1,7 +1,3 @@
-
-
-
-
 $( window ).load(function() {
   // fade out on scroll
   $(window).scroll(function() {
