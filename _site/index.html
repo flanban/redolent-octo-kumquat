@@ -16,6 +16,11 @@
   
   
   <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <script src="/javascripts/snap.svg-min.js"></script>
+  <script src="/javascripts/svgicons-config.js"></script>
+  <script src="/javascripts/svgicons.js"></script>
+  
   <script src="/javascripts/jquery.inview.js"></script>
   <script src="/javascripts/plugins.js"></script>
   <script src="/javascripts/circletype.min.js"></script>
@@ -47,7 +52,9 @@
       <li><a href="/">Law</a></li>
     </ul>
   </nav>
-  <span class="hamburger"></span>
+	<section class="si-icons si-icons-default">
+		<span class="si-icon si-icon-hamburger-cross hamburger" data-icon-name="hamburgerCross"></span>
+	</section>
 </header>
 
     
@@ -59,6 +66,11 @@
 
 <section class='home-2'>
   <div class="left">
+
+  	<section class="si-icons si-icons-default">
+  		<span class="si-icon si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span>
+  	</section>
+    
     <h4 class="header-1">Are you ready to get suitless?</h4>
     <p>Instead of wasting time with HR issues, lawyers, or accountants, our clients get the optimal amount of back office support to allow founders and decision makers to remove the distractions that they could—but shouldn’t—be wasting their time on.</p>
   </div>
@@ -216,7 +228,19 @@
   </body>
 </html>
 
+<script>
+	(function() {
+		// initialize all
+		
+		[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
+			var svgicon = new svgIcon( el, svgIconConfig );
+		} );
 
+		new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger' ), svgIconConfig, { easing : mina.backin } );
+		new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 600 } );
+
+	})();
+</script>
 <script>
         $(".royalSlider").royalSlider({
             // options go here
