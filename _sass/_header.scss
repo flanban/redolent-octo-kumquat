@@ -19,6 +19,22 @@ body > header {
     }
   }
   
+  .hamburger { // mobile hamburger
+    display: none;
+    position: absolute;
+    right: 10px;
+    margin-top: 23px;
+    height: 52px;
+    width: 52px;
+    background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/icon-hamburger.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    @media(max-width: 768px) {
+      display: block;      
+    }
+  }
+  
   > nav {
     position:absolute;
     right:10px;
