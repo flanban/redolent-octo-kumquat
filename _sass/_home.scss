@@ -180,6 +180,7 @@ body { // need to namespace this
 
 .home-4 {
   padding-bottom:35px;
+  text-align:center;
   > h4 {
     text-align:center;
     margin: 70px auto 40px auto;
@@ -217,24 +218,55 @@ body { // need to namespace this
       }
     }
   }
+  #home-servies-container {
+  //  width: 100%;
+    //text-align: center;
+    > div {
+      margin-bottom:48px;
+    }
+    > div > img {
+      width:300px;
+      display: inline-block;
+      vertical-align:top;
+      margin-right:86px;
+      @media(max-width: 660px) {
+        display:none;
+      }
+    }
+    > div > div {
+      text-align:left;
+      display: inline-block;
+      vertical-align:top;
+      width:300px;
+    }
+    .img-right {
+      > div {
+        text-align:right;
+        margin-right:86px;
+      }
+    }
+  }
   > img {
     display:inline-block;
   }
   > div {
+    > img {
+      width:250px;
+      display: inline-block;
+      @media(max-width: 660px) {
+        display:none;
+      }
     > div {
-      display:inline-block;
-      vertical-align:top;
-      width:49%;
-      padding: 0px 80px 50px 80px;
+      display:block;
       @media(max-width: 660px) {
         width: 100%;
         text-align:center;
-        padding: 0px 30px 50px 30px;
+       // padding: 0px 30px 50px 30px;
       }
       p {
-        padding-right: 50%;
+        //padding-right: 50%;
         @media(max-width: 660px) {
-          padding-right: 0%;
+          //padding-right: 0%;
         }
       }
       > img {
@@ -244,10 +276,15 @@ body { // need to namespace this
         }
       }
     }
-    > img {
-      width:49%;
-      @media(max-width: 660px) {
-        display:none;
+
+    }
+    &#home-law, &#home-hr {
+      > img {
+        width:250px;
+        display: inline-block;
+        @media(max-width: 660px) {
+          display:none;
+        }
       }
     }
     &#home-law {
@@ -262,15 +299,12 @@ body { // need to namespace this
       text-align:right;
       > div {
         p {
-          padding-left: 50%;
-          padding-right:0;
           @media(max-width: 660px) {
-            padding-left: 0%;
+           // padding-left: 0%;
           }
         }
       }
       > img {
-        padding: 0px 260px 120px 00px;
       }
     }
   }
