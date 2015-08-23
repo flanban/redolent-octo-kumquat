@@ -9,18 +9,21 @@ body > footer {
     display:inline-block;
     vertical-align:top;
   }
-  
+  @media(max-width: 660px) {
+    text-align:center;
+  }
   #contact {
-    text-align: right;
     z-index:20;
-    //padding-bottom:24px;
     margin:64px 0;
-    padding:0 64px;
     width: 100%;
     font-size:26px;
     @extend .semibold; // !optional; 
+
+    @media(min-width: 661px) {
+      text-align: right;
+      padding:0 64px;
+    }
     @media(max-width: 660px) {
-      text-align:center;
       padding:0;
     }
     
@@ -59,8 +62,9 @@ body > footer {
 
   .footer-info {
     width:24%;
-    padding:0 0 0 64px;
+    padding:0 0 24px 64px;
     border:none;
+    margin-bottom: 24px;
     img {
       margin-left: -38px;
     }
@@ -68,7 +72,8 @@ body > footer {
       width:49%;
     }
     @media(max-width: 660px) {
-      width:0%;
+      width:100%;
+      padding-left:0;
     }
   }
   .footer-links {
@@ -79,14 +84,19 @@ body > footer {
       padding:8px 18px;
     }
     @media(max-width: 959px) {
-      width:0%;
+      width:100%;
     }
-  }  .footer-maps {
-    width:50%;
-    text-align:left;
-    padding-left: 18px;
+  }
+  .footer-maps {
+    //min width
+    @media(min-width: 660px) {
+      text-align:left;
+      padding-left: 18px;
+      width:50%;
+    }
+    //max width
     @media(max-width: 959px) {
-      width:0%;
+      width:100%;
     }
     > div {
       display:inline-block;
@@ -94,9 +104,12 @@ body > footer {
       width:252px;
       margin:auto;
       margin-bottom:24px;
-      &:first-child {
-       margin-right:18px; 
+      @media(min-width: 660px) {
+        &:first-child {
+         margin-right:18px; 
+        }
       }
+      
       a {
         img {
           width:252px;
