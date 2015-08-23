@@ -205,6 +205,9 @@ body { // need to namespace this
     @media(max-width: 768px) {
       margin-bottom:90px;
     }
+    @media(max-width: 660px) {
+      display:none;
+    }
     li {
       display:inline-block;
       margin-right:30px;
@@ -218,13 +221,25 @@ body { // need to namespace this
       }
     }
   }
-  #home-servies-container {
-  //  width: 100%;
-    //text-align: center;
-    > div {
-      margin-bottom:48px;
-    }
-    > div > img {
+}
+.home-5 { // arguably should be home-5
+//  width: 100%;
+  padding-bottom:40px;
+  text-align: center;
+  
+  h4 {
+    @media(max-width: 660px) {
+      font-size:x-large;
+    }  
+  }
+  p {
+    @media(max-width: 660px) {
+      font-size:larger;
+    }  
+  }
+  > div {
+    margin-bottom:48px;
+    > img {
       width:300px;
       display: inline-block;
       vertical-align:top;
@@ -233,87 +248,32 @@ body { // need to namespace this
         display:none;
       }
     }
-    > div > div {
+    > div {
       text-align:left;
       display: inline-block;
       vertical-align:top;
       width:300px;
-    }
-    .img-right {
-      > div {
-        text-align:right;
-        margin-right:86px;
-      }
-    }
-  }
-  > img {
-    display:inline-block;
-  }
-  > div {
-    > img {
-      width:250px;
-      display: inline-block;
       @media(max-width: 660px) {
-        display:none;
-      }
-    > div {
-      display:block;
-      @media(max-width: 660px) {
-        width: 100%;
         text-align:center;
-       // padding: 0px 30px 50px 30px;
-      }
-      p {
-        //padding-right: 50%;
-        @media(max-width: 660px) {
-          //padding-right: 0%;
-        }
-      }
-      > img {
-        max-width:24px;
-        @media(max-width: 660px) {
-          display:none;
-        }
       }
     }
-
-    }
-    &#home-law, &#home-hr {
-      > img {
-        width:250px;
-        display: inline-block;
-        @media(max-width: 660px) {
-          display:none;
-        }
-      }
-    }
-    &#home-law {
-      img {
-        padding-bottom:0;
-      }
-      @media(min-width: 660px) {
-        margin-top:-60px;
-      }
-    }
-    &#home-tax {
+  }
+  .img-right {
+    > div {
       text-align:right;
-      > div {
-        p {
-          @media(max-width: 660px) {
-           // padding-left: 0%;
-          }
-        }
-      }
-      > img {
+      margin-right:86px;
+      @media(max-width: 660px) {
+        text-align:center;
+        margin-right:0px;
       }
     }
   }
 }
-.home-5 {
+.home-6 {
   text-align:center;
   padding:60px;
   @media(max-width: 480px) {
-    padding:80px 30px;
+    padding:60px 30px;
     h5 {
       color:#00a6f3;   
     }
