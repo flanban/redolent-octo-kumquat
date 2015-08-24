@@ -182,7 +182,7 @@ var svgIconConfig = {
 		]
 	},
 	hamburger : {
-		url : '{{ sie.baseurl }}/svg/hamburger.svg',
+		url : '/svg/hamburger.svg',
 		animation : [
 			{ 
 				el : 'path:nth-child(1)', 
@@ -201,7 +201,7 @@ var svgIconConfig = {
 		]
 	},
 	hamburgerCross : {
-		url : '{{ sie.baseurl }}/svg/hamburger.svg',
+		url : {{ sie.baseurl }}'/svg/hamburger.svg',
 		animation : [
 			{ 
 				el : 'path:nth-child(1)', 
