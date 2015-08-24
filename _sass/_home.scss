@@ -169,7 +169,6 @@ body { // need to namespace this
     @media(max-width: 660px) {
       color: #00a6f3;
     }
-  } 
   }
   p {
     @media(max-width: 660px) {
@@ -204,6 +203,7 @@ body { // need to namespace this
   padding-bottom:40px;
   text-align: center;
   
+
   p {
     @media(max-width: 660px) {
       font-size:larger;
