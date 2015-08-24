@@ -59,17 +59,21 @@ body > header {
         font-weight: 600;
         @media(max-width: 768px) {
           float:none;
+          padding: 4px 28px;
         }
         a {
           color:inherit;
           padding: 6px 9px;
-          border:1px solid transparent;
           font-size: 13px;
           @media(max-width: 768px) {
             width:100%;
             display:block;
             padding:20px 8px;
             font-size:18px;
+            border-bottom: 1px solid #333;
+            &.current {
+              border-bottom: none;
+            }
           }
           &:hover {
             @media(min-width: 1024px) {
@@ -78,6 +82,9 @@ body > header {
               border-radius: 3px;
               background:rgba(0,166,243,.2);
             }
+          }
+          &:active  {
+            background:rgba(0,166,243,.4);
           }
           &.current  {
             background:rgba(0,166,243,.6);
