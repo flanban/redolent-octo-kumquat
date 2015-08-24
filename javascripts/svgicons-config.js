@@ -1,3 +1,5 @@
+---
+---
 var svgIconConfig = {
 	clock : { 
 		url : 'svg/clock.svg',
@@ -180,7 +182,7 @@ var svgIconConfig = {
 		]
 	},
 	hamburger : {
-		url : '/svg/hamburger.svg',
+		url : '{{ sie.baseurl }}/svg/hamburger.svg',
 		animation : [
 			{ 
 				el : 'path:nth-child(1)', 
@@ -199,7 +201,7 @@ var svgIconConfig = {
 		]
 	},
 	hamburgerCross : {
-		url : '/svg/hamburger.svg',
+		url : '{{ sie.baseurl }}/svg/hamburger.svg',
 		animation : [
 			{ 
 				el : 'path:nth-child(1)', 
