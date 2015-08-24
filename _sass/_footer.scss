@@ -82,6 +82,10 @@ body > footer {
     @extend .semibold;
     li {
       padding:8px 18px;
+      a {
+        padding:inherit;
+        color:rgb(85, 85, 85);
+      }
     }
     @media(max-width: 959px) {
       width:100%;
