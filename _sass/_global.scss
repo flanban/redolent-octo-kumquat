@@ -48,6 +48,39 @@ body p {
   }
 }
 
+.hero-text {
+  position:absolute;
+  bottom:50px;
+  left:90px;
+  max-width:720px;
+  font-size:48px;
+  display:block;
+  max-width:420px;
+  h2 {
+    color:#00a6f3;      
+    font-size:48px;
+    line-height:1;
+    margin-bottom:16px;
+  }
+  h3 {
+    color:#fff;
+    font-size:20px;
+  }
+  @media(max-width: 767px) {
+    padding:40px;
+    position:relative;
+    top:100px;
+    left:0px;
+    max-width: 85%;
+    background-color:rgba(0,0,0,.7);
+    margin:auto;
+    &.home-hero {
+      top:160px;
+    }
+  }
+}
+
+
 // waypoints sticky
 .sticky {
   will-change: scroll-position;

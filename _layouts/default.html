@@ -16,22 +16,13 @@
 
 <script>
 	(function() {
-		// initialize all
+		// initialize all icons
 		
 		[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
 			var svgicon = new svgIcon( el, svgIconConfig );
 		} );
 
-		new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger' ), svgIconConfig, { easing : mina.backin } );
-		new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 600 } );
+
 
 	})();
-</script>
-<script>
-        $(".royalSlider").royalSlider({
-            // options go here
-            // as an example, enable keyboard arrows nav
-            controlNavigation: 'none',
-            keyboardNavEnabled: true
-        });  
 </script>

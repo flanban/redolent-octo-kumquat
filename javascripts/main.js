@@ -4,6 +4,12 @@ $( window ).load(function() {
   var heroHeight = $(window).outerHeight();
   $('.hero').height(heroHeight - 30)
   
+  //interior hero page height
+  var interiorHeroHeight = $(window).outerHeight()/2.25;
+  
+  $('.interior-hero').height(interiorHeroHeight)
+  
+  
   // fade out on scroll
   /*
   $(window).scroll(function() {

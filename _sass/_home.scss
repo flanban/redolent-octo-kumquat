@@ -20,32 +20,16 @@ body { // need to namespace this
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom:0px;
-  .text-holder {
-    position: relative;
-    max-width:420px;
-    top:120px;
-    left:43%;
-    margin-left: -220px;
-    padding:40px;
-    @media(max-width: 767px) {
-      top:160px;
-      left:0px;
-      max-width: 85%;
-      background-color:rgba(0,0,0,.7);
-      margin:auto;
-    }
-    
-    h2 {
-      color:#00a6f3;      
-      font-size:48px;
-      line-height:1;
-      margin-bottom:16px;
-    }
-    h3 {
-      color:#fff;
-      font-size:20px;
+
+  @media(min-width: 768px) {
+    .hero-text {    
+      position: relative;
+      top:120px;
+      left:43%;
+      margin-left: -220px;
     }
   }
+
   .down-button {
     position:absolute;
     bottom:0;

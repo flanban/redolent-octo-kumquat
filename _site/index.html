@@ -49,10 +49,10 @@
   <nav>
     <ul class="clearfix">
       <li><a class="active" href="/">Home</a></li>
-      <li><a href="/">About</a></li>
-      <li><a href="/">HR</a></li>
-      <li><a href="/">Tax</a></li>
-      <li><a href="/">Law</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/hr">HR</a></li>
+      <li><a href="/tax">Tax</a></li>
+      <li><a href="/law">Law</a></li>
     </ul>
   </nav>
 	<section class="si-icons si-icons-default">
@@ -62,7 +62,7 @@
 
     
     <section class='home-1 hero'>
-  <div class="text-holder">
+  <div class="text-holder home-hero hero-text widowless">
     <h2>Grow Gracefully</h2>
     <h3 class="">Get the HR, Law, & Tax support you need for fast-growth businesses.</h3>
   </div>
@@ -232,22 +232,13 @@
 
 <script>
 	(function() {
-		// initialize all
+		// initialize all icons
 		
 		[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
 			var svgicon = new svgIcon( el, svgIconConfig );
 		} );
 
-		new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger' ), svgIconConfig, { easing : mina.backin } );
-		new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 600 } );
+
 
 	})();
-</script>
-<script>
-        $(".royalSlider").royalSlider({
-            // options go here
-            // as an example, enable keyboard arrows nav
-            controlNavigation: 'none',
-            keyboardNavEnabled: true
-        });  
 </script>
