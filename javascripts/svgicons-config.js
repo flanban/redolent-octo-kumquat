@@ -180,7 +180,7 @@ var svgIconConfig = {
 		]
 	},
 	hamburger : {
-		url : '/svg/hamburger.svg',
+		url : 'flanban.github.io/redolent-octo-kumquat//svg/hamburger.svg',
 		animation : [
 			{ 
 				el : 'path:nth-child(1)', 
@@ -199,7 +199,7 @@ var svgIconConfig = {
 		]
 	},
 	hamburgerCross : {
-		url : '/svg/hamburger.svg',
+		url : 'flanban.github.io/redolent-octo-kumquat//svg/hamburger.svg',
 		animation : [
 			{ 
 				el : 'path:nth-child(1)', 
