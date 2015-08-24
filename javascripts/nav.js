@@ -33,21 +33,21 @@ $(function(){
 // && !$("#services-nav").hasClass("stuck")
 
 
-  //show/hide nav
+  // desktop nav
   function scrollNav() {
     
     $(window).scroll(function(){
        	if($(this).scrollTop() >= prevScroll){
        	  curDir = 'down';
            if(curDir != prevDir){
-             hideNav()
+             hideNav();
            }
          } else if ($("#services-nav").hasClass("stuck")) {
            curDir = 'up';
          } else {
            curDir = 'up';
            if(curDir != prevDir) {
-             showNav()
+             showNav();
            }
          }
          prevScroll = $(this).scrollTop();
@@ -55,23 +55,25 @@ $(function(){
      });
   }
   
-  function staticNav() {
+  // mobile nav
+  function mobileNav() {
     $(window).unbind('scroll');
     headerHeight = header.outerHeight()
     hideMobileNav();
   }
   
-
+  // choose between desktop and mobile nav
   function updateNav() {
     if (window.matchMedia('(min-width: 768px)').matches) {
       scrollNav();
     } else {
-      staticNav();
+      mobileNav();
     }
   }
   
   updateNav();
   
+  /*
   // turn off/on nav based on device width
   $(window).resize(function () {
       waitForFinalEvent(function(){
@@ -80,8 +82,9 @@ $(function(){
       }, 500, "wtf");
       
   });
+  */
   
-
+  
   /* slide mobile nav down//up
   function showMobileNav() {
     $('body').css('overflow', 'hidden')
@@ -106,20 +109,17 @@ $(function(){
     headerHeight = header.outerHeight();
     $(header).fadeIn();
 
-    $(this).one("click", hideMobileNav);
+    $('.hamburger').one("click", hideMobileNav);
   }
   function hideMobileNav() {
     $('body').css('overflow', 'auto')
     $(header).fadeOut();
-    $(this).one("click", showMobileNav);
+    $('.hamburger').one("click", showMobileNav);
   }
 
-  // hamburger click
-  $(".hamburger").one("click", showMobileNav);
   
   
-  
-  
+  /*
   //show nav if mouse goes near the top
   $("body").on("mousemove",function(event) {
     if (event.clientY < headerHeight) {
@@ -129,5 +129,5 @@ $(function(){
      // hideNav()
     }
   });
-
+  */
 });

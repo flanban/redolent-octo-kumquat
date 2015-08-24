@@ -34,28 +34,9 @@ $( window ).load(function() {
   */
   
   
-  // testimonial slider
-  var slider = $(".royalSlider").data('royalSlider');
-  var slideCountEl = $(".rsSlideCount")
-  function updCount() {
-    slideCountEl.html( (slider.currSlideId+1) + '</sup>&frasl;<sub>' + slider.numSlides + '</sub>' );    
-  }
-  if ($('.royalSlider').length != 0) {
-    slider.ev.on('rsAfterSlideChange', updCount);
-    updCount();
-  }
-  
-  $(".next-testimonial-button").click(function() {
-    slider.next();    
-  });
-  
-  $(".prev-testimonial-button").click(function() {
-    slider.prev();    
-  });
 });
 
 
-// widow fix
 $(document).ready(function() {
   
   
@@ -70,9 +51,11 @@ $(document).ready(function() {
   $('.circle-text-dir1').circleType({radius: 284, dir:-1});
 
   
-  //all heading 1s
-    $('p, .widowless, h5').widowFix();
+    //widow fix
+    $('p, .widowless, h5, .header-1').widowFix();
     
+    
+    /* old service nav, still kinda cool
     if ($('.sticky').length != 0) {
       var sticky = new Waypoint.Sticky({
         element: $('.sticky')[0]
@@ -104,10 +87,10 @@ $(document).ready(function() {
         scrollTop: $("#services-hr").offset().top -serviceNavHeight
       }, 300);
       return false;
-    });
+    }); */
 });
 
-
+/*
 //services page nav
 $( window ).scroll(function() {
   var scrollPos = $(document).scrollTop();
@@ -123,9 +106,7 @@ $( window ).scroll(function() {
       }
   });
 });
-
-
-
+*/
 
 
 

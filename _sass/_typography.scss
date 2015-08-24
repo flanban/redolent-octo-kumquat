@@ -38,6 +38,9 @@ body {
 .header-1 { //vinyl-regular, 24, tracked out
   font-family:"proxima-nova-sb", 'helvetica', 'arial', sans-serif;
   font-size:18px;
+  @media(max-width: 480px) {
+    font-size:xx-large;
+  }
 }
 .quote-1 { //vinyl-regular, 24, tracked out
   font-family:"proxima-nova-lt-it", 'helvetica', 'arial', sans-serif;
