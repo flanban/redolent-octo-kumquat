@@ -58,7 +58,7 @@ $(function(){
   function staticNav() {
     $(window).unbind('scroll');
     headerHeight = header.outerHeight()
-    hideNav();
+    hideMobileNav();
   }
   
 
@@ -82,9 +82,7 @@ $(function(){
   });
   
 
-  // hamburger icon & mobile nav
-  
-  
+  /* slide mobile nav down//up
   function showMobileNav() {
     $('body').css('overflow', 'hidden')
     headerHeight = header.outerHeight()
@@ -100,6 +98,23 @@ $(function(){
     }, 300);
     $(this).one("click", showMobileNav);
   }
+  */
+
+  // fade mobile nav in/out
+  function showMobileNav() {
+    $('body').css('overflow', 'hidden')
+    headerHeight = header.outerHeight();
+    $(header).fadeIn();
+
+    $(this).one("click", hideMobileNav);
+  }
+  function hideMobileNav() {
+    $('body').css('overflow', 'auto')
+    $(header).fadeOut();
+    $(this).one("click", showMobileNav);
+  }
+
+  // hamburger click
   $(".hamburger").one("click", showMobileNav);
   
   

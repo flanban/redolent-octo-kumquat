@@ -80,6 +80,34 @@ body p {
   }
 }
 
+section.si-icons { // mobile hamburger
+  display: none;
+  position: fixed;
+  right: 0px;
+  top:0px;
+  height: 49px;
+  width: 64px;
+  padding:9px;
+  box-sizing: initial;
+  z-index: 910;
+  @media(max-width: 768px) {
+    display: block;      
+  }
+  span.si-icon {
+    background:rgba(0,0,0,.5);
+    //top: -40px;
+    position: relative;
+    //right: 54px;
+    height: inherit;
+    width: inherit;
+    margin:0;
+    svg {
+      width: inherit;        
+      height: inherit;
+    }
+  }
+}
+
 
 // waypoints sticky
 .sticky {
