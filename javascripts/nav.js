@@ -82,20 +82,23 @@ $(function(){
   });
   
 
-  // hamburger icon
-
+  // hamburger icon & mobile nav
+  
+  
   function showMobileNav() {
-      headerHeight = header.outerHeight()
-      $(header).animate({
-          top: "0"
-      }, 150);
-      $(this).one("click", hideMobileNav);
+    $('body').css('overflow', 'hidden')
+    headerHeight = header.outerHeight()
+    $(header).animate({
+        top: "0"
+    }, 150);
+    $(this).one("click", hideMobileNav);
   }
   function hideMobileNav() {
-      $(header).animate({
-          top: -headerHeight
-      }, 300);
-      $(this).one("click", showMobileNav);
+    $('body').css('overflow', 'auto')
+        $(header).animate({
+        top: -headerHeight
+    }, 300);
+    $(this).one("click", showMobileNav);
   }
   $(".hamburger").one("click", showMobileNav);
   
