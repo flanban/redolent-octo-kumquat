@@ -67,7 +67,6 @@ body { // need to namespace this
     }
     @media(max-width: 660px) {
       h4 {
-        font-size:x-large;
         width:80%;
       }
       p {
@@ -149,9 +148,6 @@ body { // need to namespace this
   .right {
     @media(max-width: 480px) {
       font-size: larger;
-      h4 {
-        font-size:x-large;
-      }
     } 
   }
   .left {
@@ -173,11 +169,7 @@ body { // need to namespace this
     @media(max-width: 660px) {
       color: #00a6f3;
     }
-  }
-  h4 {
-    @media(max-width: 660px) {
-      font-size:x-large;
-    }  
+  } 
   }
   p {
     @media(max-width: 660px) {
@@ -212,11 +204,6 @@ body { // need to namespace this
   padding-bottom:40px;
   text-align: center;
   
-  h4 {
-    @media(max-width: 660px) {
-      font-size:x-large;
-    }  
-  }
   p {
     @media(max-width: 660px) {
       font-size:larger;
