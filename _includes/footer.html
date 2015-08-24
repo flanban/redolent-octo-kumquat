@@ -15,13 +15,13 @@
   </div>
 
   <ul class="footer-links">
-    <li><a href="{{ site.baseurl }}/">Home</a></li>
-    <li><a href="{{ site.baseurl }}/about">About</a></li>
-    <li><a href="{{ site.baseurl }}/teams">Teams</a></li>
-    <li><a href="{{ site.baseurl }}/jobs">Jobs</a></li>
-    <li><a href="{{ site.baseurl }}/ventures">Ventures</a></li>
-    <li><a href="{{ site.baseurl }}/investors">Investors</a></li>
-    <li><a href="{{ site.baseurl }}/pricing">Pricing</a></li>
+    <li><a href="{{ site.baseurl }}/" {% if page.namezo == 'home' %}class='current'{% endif %}>Home</a></li>
+    <li><a href='{{ site.baseurl }}/about' {% if current[1] == 'about' %}class='current'{% endif %}>About</a></li>     
+    <li><a href='{{ site.baseurl }}/teams' {% if current[1] == 'teams' %}class='current'{% endif %}>Teams</a></li>     
+    <li><a href='{{ site.baseurl }}/jobs' {% if current[1] == 'jobs' %}class='current'{% endif %}>Jobs</a></li>     
+    <li><a href='{{ site.baseurl }}/ventures' {% if current[1] == 'ventures' %}class='current'{% endif %}>Ventures</a></li>     
+    <li><a href='{{ site.baseurl }}/investors' {% if current[1] == 'investors' %}class='current'{% endif %}>Investors</a></li>     
+    <li><a href='{{ site.baseurl }}/pricing' {% if current[1] == 'pricing' %}class='current'{% endif %}>Pricing</a></li>     
   </ul>
   
   <div class="footer-maps">

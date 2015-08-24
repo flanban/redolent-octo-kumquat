@@ -85,6 +85,10 @@ body > footer {
       a {
         padding:inherit;
         color:rgb(85, 85, 85);
+        &.current  {
+          background:rgba(0,166,243,.6);
+          color:#fff;
+        }
       }
     }
     @media(max-width: 959px) {
