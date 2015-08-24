@@ -1,3 +1,5 @@
+{% assign current = page.url | downcase | split: '/' %}
+
 <a href="{{ site.baseurl }}/" class="header-logo-mobile">
   <img src="http://flanban.github.io/redolent-octo-kumquat/images/suitless-logo.png" height="" width="">
 </a>
@@ -5,10 +7,12 @@
   <a href="{{ site.baseurl }}/" class="header-logo">
     <img src="http://flanban.github.io/redolent-octo-kumquat/images/suitless-logo.png" height="" width="">
   </a>
-  <nav>
+  <nav>  
     <ul class="clearfix">
       <li><a class="active" href="{{ site.baseurl }}/">Home</a></li>
       <li><a href="{{ site.baseurl }}/about">About</a></li>
+      <li><a href='{{ site.baseurl }}/about' {% if current[1] == 'about' %}class='current'{% endif %}>About</a></li>
+      
       <li><a href="{{ site.baseurl }}/hr">HR</a></li>
       <li><a href="{{ site.baseurl }}/tax">Tax</a></li>
       <li><a href="{{ site.baseurl }}/law">Law</a></li>
