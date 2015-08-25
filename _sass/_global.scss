@@ -35,9 +35,12 @@ body p {
   position:relative;
   background-color: #ccc;
   h2 {
-    font-size:38px;
+    @extend .header-1;
+    font-size:24px;
+    background-color: rgba(43,114,144,.6);
+    padding:38px;
     letter-spacing: 3px;
-    color:#00a6f3;
+    color:#fff;
     position:absolute;
     bottom:40px;
     left:15%;
