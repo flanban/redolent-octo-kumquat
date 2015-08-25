@@ -21,7 +21,7 @@ body > header {
     height:52px;
     top: 14px;
     position: absolute;
-    left: 10px;
+    left: 14px;
     display:inline-block;
 
     @media(max-width: 768px) {
@@ -44,7 +44,8 @@ body > header {
   } 
   > nav {
     display:inline-block;
-    top: 12px;
+    top: 0px;
+    padding:9px;
     position:relative;
     height: 52px;
     @media(max-width: 768px) {
