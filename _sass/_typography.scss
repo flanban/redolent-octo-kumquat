@@ -32,12 +32,13 @@ body {
   color:#555;
   line-height:1.4;
   font-family:"proxima-nova-lt", 'helvetica', 'arial', sans-serif;
-}
-p {
-  @media(max-width: 660px) {
-    font-size:larger;
+  p {
+    @media(max-width: 660px) {
+      font-size:larger;
+    }
   }
 }
+
 //fonts
 .header-1 { //vinyl-regular, 24, tracked out
   font-family:"proxima-nova-sb", 'helvetica', 'arial', sans-serif;
