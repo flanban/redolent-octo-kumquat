@@ -74,6 +74,10 @@ body p {
     font-size:48px;
     line-height:1;
     margin-bottom:16px;
+    @media(max-width: 767px) {
+      font-family:"proxima-nova-sb", 'helvetica', 'arial', sans-serif;
+      font-size:24px;
+    }
   }
   h3 {
     color:#fff;
@@ -88,7 +92,7 @@ body p {
     background-color:rgba(0,0,0,.7);
     margin:auto;
     &.home-hero {
-      top:160px;
+      top:100px;
     }
   }
 }
