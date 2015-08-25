@@ -50,16 +50,11 @@ body > footer {
     }
   }
 
-  .divider {
-    margin-bottom:64px;
-  }
-
 
   .footer-info {
-    width:24%;
-    padding:0 0 24px 64px;
+    width:26%;
+    padding:0 0 64px 84px;
     border:none;
-    margin-bottom: 24px;
     img {
       margin-left: -38px;
     }
@@ -71,12 +66,46 @@ body > footer {
       padding-left:0;
     }
   }
+  
+  .divider {
+    margin-bottom:64px;
+    &:nth-of-type(2) {
+      @media(min-width: 660px) {
+        display:none;
+      } 
+    }
+    &:nth-of-type(3) {
+      @media(min-width: 960px) {
+        display:none;
+      } 
+    }
+  }
+  
   .footer-links {
-    width:22%;
-    margin-bottom:36px;
+    margin-bottom:56px;
     @extend .semibold;
+    @media(min-width: 960px) {
+      width:22%;
+    }
+    @media(max-width: 959px) {
+      width:50%;
+    }
+    @media(max-width: 660px) {
+      border:none;
+      width:80%;
+    }
     li {
       padding:8px 18px;
+      @media(max-width: 959px) {
+        width:36%;
+        display: inline-block;        
+      }
+      @media(max-width: 660px) {
+        min-width: 154px;
+      }
+      @media(max-width: 420px) {
+//        width: 100%;
+      }
       a {
         padding:inherit;
         color:rgb(85, 85, 85);
@@ -86,13 +115,10 @@ body > footer {
         }
       }
     }
-    @media(max-width: 959px) {
-      width:100%;
-    }
   }
   .footer-maps {
     //min width
-    @media(min-width: 660px) {
+    @media(min-width: 960px) {
       text-align:left;
       padding-left: 18px;
       width:50%;
@@ -100,28 +126,26 @@ body > footer {
     //max width
     @media(max-width: 959px) {
       width:100%;
+      text-align: center;
     }
     > div {
       display:inline-block;
       vertical-align:top;
-      width:252px;
-      margin:auto;
+      width:212px;
       margin-bottom:24px;
-      @media(min-width: 660px) {
-        &:first-child {
-         margin-right:18px; 
-        }
+      &:first-child {
+        margin-right:14px; 
       }
       
       a {
         img {
-          width:252px;
-          height:154px;
+          width:212px;
+          height:auto;
         }
       }
     }
   }
   > * {
-    border-left:1px solid rgba(0,0,0,.1);
+    border-left:1px solid rgba(0,0,0,.05);
   }
 }
