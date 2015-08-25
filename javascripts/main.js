@@ -2,7 +2,7 @@ $( window ).load(function() {
   
   //set hero height
   var heroHeight = $(window).outerHeight();
-  $('.hero').height(heroHeight - 30)
+  $('.hero').height(heroHeight / 1.5)
   
   //interior hero page height
   var interiorHeroHeight = $(window).outerHeight()/2.25;
@@ -39,20 +39,21 @@ $( window ).load(function() {
 
 $(document).ready(function() {
   
+  //widow fix
+  $('p, .widowless, h5, .header-1').widowFix();
   
   
   // fit text
-  $(".home-page-headline").fitText(2.2, { minFontSize: '18px'});
-  $(".home-page-graphic").fitText(.2, { minFontSize: '18px'});
+//  $(".home-page-headline").fitText(2.2, { minFontSize: '18px'});
+//  $(".home-page-graphic").fitText(.2, { minFontSize: '18px'});
   
   
-  $('.circle-text').circleType({radius: 284});
-  $('.circle-text-shallow').circleType({radius: 480});
-  $('.circle-text-dir1').circleType({radius: 284, dir:-1});
+//  $('.circle-text').circleType({radius: 284});
+//  $('.circle-text-shallow').circleType({radius: 480});
+//  $('.circle-text-dir1').circleType({radius: 284, dir:-1});
 
   
-    //widow fix
-    $('p, .widowless, h5, .header-1').widowFix();
+
     
     
     /* old service nav, still kinda cool
