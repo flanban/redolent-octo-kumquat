@@ -50,14 +50,14 @@ body > header {
     height: 52px;
     @media(max-width: 768px) {
       display:block;
-      height:700px;
+      height:1000px;
       margin-bottom:36px;
     }
     > ul {
       li {
         float:left;
         padding: 4px 8px;
-        font-weight: 600;
+        font-family:"proxima-nova-sb", 'helvetica', 'arial', sans-serif;
         @media(max-width: 768px) {
           float:none;
           padding: 4px 28px;
