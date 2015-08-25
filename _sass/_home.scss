@@ -15,6 +15,7 @@ body { // need to namespace this
   will-change: opacity;
   background:url('http://flanban.github.io/redolent-octo-kumquat/images/home-1.jpg') center no-repeat;
   background-size:cover;
+  background-color:#ccc;
   @media(min-width: 768px) {
     .hero-text {    
       position: relative;

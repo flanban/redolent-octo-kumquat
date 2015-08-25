@@ -84,15 +84,14 @@ body p {
     font-size:20px;
   }
   @media(max-width: 767px) {
-    padding:40px;
-    position:relative;
-    top:100px;
-    left:0px;
-    max-width: 85%;
+    bottom:20px;
+    padding:20px 40px;
+    left:50%;
+    width: 90%;
+    margin-left:-45%;
     background-color:rgba(0,0,0,.7);
-    margin:auto;
     &.home-hero {
-      top:100px;
+      padding:40px;
     }
   }
 }
