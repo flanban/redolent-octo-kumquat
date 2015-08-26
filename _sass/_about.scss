@@ -105,11 +105,17 @@
 .about-7 {
   text-align:center;
   padding:60px;  
+  @media (max-width: 480px) {
+    h5 {
+      font-size: xx-large;      
+    }
+  }
 }
+
 .grow-gracefully.about {
-  background:url('http://flanban.github.io/redolent-octo-kumquat/images/about-2.jpg') center no-repeat;
-  background-size: cover;
+  background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/about-2.jpg');
   h2 {
     color:#fff;    
   }
+
 }

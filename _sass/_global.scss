@@ -30,10 +30,15 @@ body p {
   }
 }
 
+
+
 .grow-gracefully {
   height:285px;
   position:relative;
   background-color: #ccc;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: cover;
   h2 {
     @extend .header-1;
     font-size:24px;
@@ -59,8 +64,22 @@ body p {
   }
 }
 .interior-hero {
-  background-color:#ccc;
+  background-color:#aaa;
+  position:relative;
+  // hr, tax and law hero text
+  .service-text {
+    width:60%;
+    text-align:center;
+    margin:auto;
+    position:relative;
+    top:40%;
+    color:#fff;
+    p {
+      font-size:18px;
+    }
+  }
 }
+
 .hero-text {
   position:absolute;
   bottom:50px;
@@ -95,6 +114,9 @@ body p {
     }
   }
 }
+
+
+
 
 section.si-icons { // mobile hamburger
   display: none;
