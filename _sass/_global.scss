@@ -129,6 +129,13 @@ body.about_index .grow-gracefully {
     color:#fff;
     font-size:20px;
   }
+  h4 {
+    color:#fff;      
+    @media(max-width: 767px) {
+      font-family:"proxima-nova-sb", 'helvetica', 'arial', sans-serif;
+      font-size:24px;
+    } 
+  }
   @media(max-width: 767px) {
     bottom:20px;
     padding:20px 40px;
