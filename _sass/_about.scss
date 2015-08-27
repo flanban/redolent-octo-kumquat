@@ -42,51 +42,7 @@
   }
 }
 
-.about-4 {
-  //height:100vh;
-  background:rgba(255,255,255,1);
-  text-align:center;
-  
-  > img {
-    margin:120px auto 80px auto;
-    display:block;
-  }
-  > p {
-    margin:30px 0;
-    font-size:48px;
-  }
-  ul {
-    width:90%;
-    height:auto;
-    margin:auto;
-    overflow:hidden;
-    margin-bottom:120px;
-    li {
-      background:rgba(0,0,0,0.7);
-      width:24%;
-      margin-right:1%;
-      display: -moz-inline-stack;
-      display: inline-block;
-      vertical-align: top;
-      color:#fff;
-      text-align:center;
-      height:100%;
-      padding-top: 100%;
-      margin-top: -100%;
-      padding-bottom: 100%;
-      margin-bottom: -100%;
-      h4 {
-//        margin-bottom:1em;
 
-        margin-top: 30px;
-      }
-      p {
-        line-height:2.4;
-        padding: 38px;
-      }
-    }
-  }
-}
 
 .about-4 {
   text-align:center;
