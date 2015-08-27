@@ -15,7 +15,7 @@
   </div>
   <span class="divider"></span>
   <ul class="footer-links">
-    <li><a href="{{ site.baseurl }}/" {% if page.namezo == 'home' %}class='current'{% endif %}>Home</a></li>
+    <li><a href="{{ site.baseurl }}/" {% if page.slug == 'home' %}class='current'{% endif %}>Home</a></li>
     <li><a href='{{ site.baseurl }}/about' {% if current[1] == 'about' %}class='current'{% endif %}>About</a></li>     
     <li><a href='{{ site.baseurl }}/teams' {% if current[1] == 'teams' %}class='current'{% endif %}>Teams</a></li>     
     <li><a href='{{ site.baseurl }}/jobs' {% if current[1] == 'jobs' %}class='current'{% endif %}>Jobs</a></li>     

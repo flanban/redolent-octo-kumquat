@@ -32,4 +32,4 @@ class BodyClassTag < Liquid::Tag
   end
 
 end
-Liquid::Template.register_tag('body_class', BodyClassTag)
+Liquid::Template.register_tag('body_class', BodyClassTag) 
