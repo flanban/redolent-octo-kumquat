@@ -152,14 +152,16 @@ body { // need to namespace this
     }
     li {
       display:inline-block;
-      margin-right:30px;
+      margin-right:90px;
       &:last-child {
         margin-right:0px;        
       }
       > img {
         border-bottom:1px solid #ccc;
         padding-bottom:18px;
-        margin-bottom:18px;        
+        margin-bottom:18px;
+        height: auto;
+        width: 36px; 
       }
     }
   }
