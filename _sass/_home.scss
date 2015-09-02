@@ -107,9 +107,6 @@ body { // need to namespace this
   }
 }
 .home-3 {
-  .quote-1 {
-    color:#00a6f3;
-  }
   > div {
     display:inline-block;
     width:49%;
@@ -206,9 +203,6 @@ body { // need to namespace this
   padding:60px;
   @media(max-width: 480px) {
     padding:60px 30px;
-    h5 {
-      color:#00a6f3;   
-    }
   }
 }
 
