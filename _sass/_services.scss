@@ -24,6 +24,30 @@
   background-color: #00a6f3;
 }
 
+.law-2 {
+  text-align:center;
+  padding:60px;
+  ul {
+    display:inline-block;
+    width:90%;
+    li {
+      width:31%;
+      height:460px;
+      display:inline-block;
+      vertical-align:top;
+      border:1px solid #e6e6e6;
+      padding:100px 40px;
+      margin-left:1%;
+      &:first-child {
+        margin-left:0px;  
+      }
+      img {
+        width:90px;
+        height:auto;
+      }
+    }
+  }
+}
 
 
 .tax-1 {
