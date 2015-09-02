@@ -53,18 +53,22 @@ body { // need to namespace this
   }
   .left {
     width:60%;
-    padding: 60px 110px;
+    padding: 60px 140px;
+    font-size:18px;
     @media(max-width: 959px) {
       width:100%;
+      padding: 60px 90px;
+      
     }
     @media(max-width: 660px) {
       h4 {
         width:80%;
       }
     }
-    @media(max-width: 420px) {
+    @media(max-width: 660px) {
       padding: 60px 30px;
     }
+    
   }
   .right {
     width: 36%;
@@ -93,7 +97,7 @@ body { // need to namespace this
       @media(max-width: 959px) {
         width:24%;
       }
-      @media(max-width: 520px) {
+      @media(max-width: 560px) {
         width:49%;
       }
       &:nth-last-of-type(-n+2) {
