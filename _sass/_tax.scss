@@ -1,5 +1,5 @@
 .tax-1 {
-  background-color: #00a6f3;
+  background-color: #094463;
 }
 
 .tax-2 {
@@ -28,16 +28,16 @@
       position:absolute;
       &:nth-of-type(1) {
         margin-left: -360px;
-        top:82px;
+        top:88px;
       }
       &:nth-of-type(2) {
         margin-left: 162px;
-        top:296px;
+        top:302px;
         text-align: left;
       }
       &:nth-of-type(3) {
         margin-left: -360px;
-        top:498px;
+        top:504px;
       }
     }
     @media(max-width:767px) {

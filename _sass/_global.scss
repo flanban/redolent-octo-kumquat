@@ -83,6 +83,12 @@ body.about .grow-gracefully {
 body.hr .grow-gracefully {
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/hr-2.jpg');
 }
+body.tax .grow-gracefully {
+  background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/tax-2.jpg');
+}
+body.law .grow-gracefully {
+  background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/law-2.jpg');
+}
 
 
 
@@ -162,6 +168,11 @@ body.hr .grow-gracefully {
 }
 
 
+.hr, .tax, .law {
+ h3.header-1 {
+   color:#00a6f3;
+ }
+}
 
 
 section.si-icons { // mobile hamburger
