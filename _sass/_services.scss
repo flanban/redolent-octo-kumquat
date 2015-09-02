@@ -53,3 +53,48 @@
 .tax-1 {
   background-color: #00a6f3;
 }
+
+.tax-2 {
+  position:relative;
+  height: 660px;
+  padding: 50px 0;
+
+  > img {
+    width:300px;
+    height:auto;
+    position:absolute;
+    left:50%;
+    margin-left:-150px;
+  }
+  
+  > div {
+    position:absolute;
+    width:200px;
+    margin-left:-100px;
+    left:50%;
+    text-align: right;
+    &:nth-of-type(1) {
+      margin-left: -360px;
+      top:82px;
+    }
+    &:nth-of-type(2) {
+      margin-left: 162px;
+      top:296px;
+      text-align: left;
+    }
+    &:nth-of-type(3) {
+      margin-left: -360px;
+      top:498px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
