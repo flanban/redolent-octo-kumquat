@@ -91,6 +91,9 @@ $(document).ready(function() {
     }); */
 });
 
+window.onscroll = function (e) {  
+  $('.hamburger').click(false);
+}
 /*
 //services page nav
 $( window ).scroll(function() {
