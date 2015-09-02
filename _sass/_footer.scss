@@ -98,7 +98,8 @@ body > footer {
       padding:8px 18px;
       @media(max-width: 959px) {
         width:36%;
-        display: inline-block;        
+        display: inline-block;
+        text-align: center;     
       }
       @media(max-width: 660px) {
         min-width: 154px;
