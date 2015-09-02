@@ -17,9 +17,6 @@ body p {
 }
 
 
-.hero-text {
-  will-change:opacity;
-}
 
 .divider {
   position:relative;
@@ -101,6 +98,10 @@ body.law .grow-gracefully {
 .interior-hero {
   background-color: #444;
   position:relative;
+  height:320px;
+  @media(max-width: 480px) {
+    height:400px;
+  }
   // hr, tax and law hero text
   .service-text {
     width:60%;
@@ -160,10 +161,10 @@ body.law .grow-gracefully {
     } 
   }
   @media(max-width: 767px) {
-    bottom:20px;
+    bottom:140px;
     padding:20px 40px;
     left:50%;
-    width: 260px;
+    width: 280px;
     margin-left: -130px;
     text-align:center;
     background-color:rgba(0,0,0,.7);

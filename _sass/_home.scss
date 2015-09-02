@@ -12,6 +12,7 @@ body { // need to namespace this
  // position:fixed;
   top:0;
   left:0;
+  height:480px;
   will-change: opacity;
   background:url('http://flanban.github.io/redolent-octo-kumquat/images/home-1.jpg') center no-repeat;
   background-size:cover;
@@ -188,6 +189,7 @@ body { // need to namespace this
       width:300px;
       @media(max-width: 660px) {
         text-align:center;
+        margin-bottom:60px;
       }
     }
   }
