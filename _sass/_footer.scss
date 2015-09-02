@@ -82,7 +82,7 @@ body > footer {
   }
   
   .footer-links {
-    margin-bottom:14px;
+    margin-bottom:44px;
     @extend .semibold;
     @media(min-width: 960px) {
       width:22%;
@@ -143,6 +143,9 @@ body > footer {
           height:auto;
         }
       }
+    }
+    small {
+      font-size:small;
     }
   }
   > * {

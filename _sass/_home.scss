@@ -129,13 +129,6 @@ body { // need to namespace this
       padding: 30px 21px 30px 21px;
     }
   }
-  .left {
-    h5 {
-      @media(max-width: 480px) {
-        font-size: xx-large;
-      }
-    }    
-  }
 }
 
 .home-4 {
@@ -213,11 +206,6 @@ body { // need to namespace this
     padding:60px 30px;
     h5 {
       color:#00a6f3;   
-    }
-  }
-  @media(max-width: 480px) {
-    h5 {
-      font-size:xx-large;      
     }
   }
 }
