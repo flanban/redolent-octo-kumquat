@@ -78,10 +78,11 @@ body { // need to namespace this
       width:100%;
     }
     p {
-      padding:4px 2px 0px 2px;
+      padding:10px 2px 0px 2px;
       color:#aaa;
-      font-size: initial;
-      
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:3px;
     }
     > li {
       background:#f5f5f5;
