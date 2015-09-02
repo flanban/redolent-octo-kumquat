@@ -65,26 +65,35 @@
     position:absolute;
     left:50%;
     margin-left:-150px;
+    @media(max-width:767px) {
+     display:none;
+    }
   }
   
   > div {
-    position:absolute;
-    width:200px;
-    margin-left:-100px;
-    left:50%;
-    text-align: right;
-    &:nth-of-type(1) {
-      margin-left: -360px;
-      top:82px;
+    text-align: center;    
+    @media(min-width:768px) {
+      width:200px;
+      margin-left:-100px;
+      left:50%;
+      text-align: right;
+      position:absolute;
+      &:nth-of-type(1) {
+        margin-left: -360px;
+        top:82px;
+      }
+      &:nth-of-type(2) {
+        margin-left: 162px;
+        top:296px;
+        text-align: left;
+      }
+      &:nth-of-type(3) {
+        margin-left: -360px;
+        top:498px;
+      }
     }
-    &:nth-of-type(2) {
-      margin-left: 162px;
-      top:296px;
-      text-align: left;
-    }
-    &:nth-of-type(3) {
-      margin-left: -360px;
-      top:498px;
+    @media(max-width:767px) {
+      padding:0 30px 24px 30px;
     }
   }
 }
