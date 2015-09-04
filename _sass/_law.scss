@@ -3,38 +3,60 @@
 }
 
 .law-2 {
-  text-align:center;
-  padding:60px;
-  @media(max-width:880px) {
-    padding:30px;
+  padding:90px;
+  max-width:990px;
+  margin:auto;
+  @media(max-width:660px) {
+    padding:60px 40px;
   }
-  ul {
+  
+  .graphic, .text-holder {
     display:inline-block;
-    width:90%;
-    @media(max-width:880px) {
+    vertical-align:middle;
+  }
+  .graphic {
+    position:relative;
+    width:49%;
+    img {
+      display:block;
       width:100%;
+      height:auto;
     }
-    li {
-      width:31%;
-      height:460px;
-      display:inline-block;
-      vertical-align:top;
-      border:1px solid #e6e6e6;
-      padding:100px 40px;
-      margin-left:1%;
-      &:first-child {
-        margin-left:0px;  
-      }
+    h6 {
+      position:absolute;
+      left:50%;
+      top:50%;
+      width:130px;
+      text-align:center;
+      margin:-10px 0 0 -62px;
+      text-transform:uppercase;
+      letter-spacing:3px;
+      color:#999;
+      @extend .semibold;
+    }
+    @media(max-width:659px) {
+      width:100%;
       img {
-        width:90px;
-        height:auto;
+        width:290px;
+        margin:auto;
+        margin-bottom:40px;
       }
-      @media(max-width:660px) {
-        width:100%;
-        height:auto;
-        margin:0 0 20px 0;
-        padding:60px 40px;
-      }
+    }
+  }
+  .text-holder {
+    padding:0 40px;
+    width:50%;
+    text-align:left;
+    p {
+      margin-bottom:24px;
+    }
+    
+    @media(max-width:659px) {
+      width:100%;
+      text-align:center;
+    }
+    @media(max-width:420px) {
+      padding:0;
     }
   }
 }
