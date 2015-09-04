@@ -27,10 +27,6 @@
       top:50%;
       width:130px;
       margin:-32px 0 0 -65px;
-      text-transform:uppercase;
-      letter-spacing:3px;
-      color:#999;
-      @extend .semibold;
     }
     @media(max-width:659px) {
       width:100%;
@@ -38,6 +34,9 @@
         width:290px;
         margin:auto;
         margin-bottom:40px;
+      }
+      h6 {
+        margin:-42px 0 0 -65px;
       }
     }
   }

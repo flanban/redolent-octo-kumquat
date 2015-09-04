@@ -27,14 +27,12 @@
       left:50%;
       top:50%;
       width:130px;
-      text-align:center;
-      margin:-10px 0 0 -62px;
-      text-transform:uppercase;
-      letter-spacing:3px;
-      color:#999;
-      @extend .semibold;
+      margin:20px 0 0 -62px;
     }
     @media(max-width:659px) {
+      h6 {
+        margin-top:-10px;
+      }
       width:100%;
       img {
         width:290px;
@@ -44,19 +42,19 @@
     }
   }
   .text-holder {
-    padding:0 40px;
+    padding:0 10px 0 80px;
     width:50%;
-    text-align:left;
-    p {
-      margin-bottom:24px;
-    }
-    
+    text-align:left; 
     @media(max-width:659px) {
       width:100%;
       text-align:center;
+      padding:0 40px;
     }
     @media(max-width:420px) {
       padding:0;
     }
+  }
+  p {
+    margin-bottom:24px;
   }
 }
