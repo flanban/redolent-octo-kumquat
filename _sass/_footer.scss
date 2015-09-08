@@ -140,9 +140,28 @@ body > footer {
       }
       
       a {
+        position:relative;
+        display:inline-block;
         img {
           width:212px;
           height:auto;
+        }
+        p {
+          display:none;
+          @media(min-width:1024px) {
+            background:#6e6ed4;
+            color:#fff;
+            padding:3px 0;
+            text-align:center;            
+          }
+        }
+        &:hover {
+          p {
+            display:block;
+            position:absolute;
+            top:-24px;
+            width:100%;
+          }
         }
       }
     }
