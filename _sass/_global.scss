@@ -101,6 +101,10 @@ body.finance .grow-gracefully {
 
 body.ventures .grow-gracefully {
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/ventures-2.jpg');
+  @media(max-width: 768px) {
+    background-position:right;
+  }
+  
   h2 {
     background:rgba(14,114,164,.6);
   }
