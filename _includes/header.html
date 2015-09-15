@@ -1,9 +1,8 @@
 {% assign current = page.url | downcase | split: '/' %}
 
 <header>
-  <a href="{{ site.baseurl }}/" class="header-logo">
-    <img src="http://flanban.github.io/redolent-octo-kumquat/images/suitless-logo.png" height="" width="">
-  </a>
+  <a href="{{ site.baseurl }}/" class="header-logo"></a>
+  
   <nav>  
     <ul class="clearfix">
       <li><a href="{{ site.baseurl }}/" {% if page.slug == 'home' %}class='current'{% endif %}>Home</a></li>

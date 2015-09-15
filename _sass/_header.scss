@@ -18,12 +18,16 @@ body > header {
   }
   
   .header-logo {
-    height:52px;
-    top: 0px;
+    height: 25px;
+    width:110px;
+    top: 11px;
     position: absolute;
     left: 14px;
     display:inline-block;
-
+    background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/sprite-global.png');
+    background-position:-150px 0;
+    
+    
     @media(max-width: 768px) {
       position:relative;
       display:block;
@@ -34,7 +38,6 @@ body > header {
     }
 
     img {
-      height: 25px;
       margin:11px 0;
       @media(max-width: 768px) {
         height: 40px;

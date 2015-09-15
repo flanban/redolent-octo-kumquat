@@ -55,8 +55,13 @@ body > footer {
     width:26%;
     padding:0 0 64px 84px;
     border:none;
-    img {
+    > a {
+      background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/sprite-global.png');
+      background-position:0 0;        
+      width:138px;
+      height:39px;
       margin-left: -38px;
+      display:inline-block;
     }
     @media(max-width: 959px) {
       width:49%;
@@ -142,9 +147,14 @@ body > footer {
       a {
         position:relative;
         display:inline-block;
-        img {
-          width:212px;
-          height:auto;
+        width:212px;
+        height:130px;
+        background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/sprite-global.png');
+        &.seattle {
+          background-position:-550px 0;        
+        }
+        &.wash-dc {
+          background-position:-300px 0;        
         }
         p {
           display:none;
