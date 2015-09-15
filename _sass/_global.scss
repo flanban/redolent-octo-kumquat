@@ -73,40 +73,24 @@ body.home .grow-gracefully {
 }
 body.about .grow-gracefully {
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/about-2.jpg');
-  h2 {
-    color:#fff;    
-  }
 }
 body.hr .grow-gracefully {
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/hr-2.jpg');
 }
 body.tax .grow-gracefully {
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/tax-2.jpg');
-  h2 {
-    background:rgba(21,142,203,.6);
-  }
 }
 body.law .grow-gracefully {
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/law-2.jpg');
-  h2 {
-    background:rgba(14,114,164,.6);
-  }
 }
 body.finance .grow-gracefully {
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/finance-2.jpg');
-  h2 {
-    background:rgba(14,114,164,.6);
-  }
 }
 
 body.ventures .grow-gracefully {
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/ventures-2.jpg');
   @media(max-width: 768px) {
     background-position:right;
-  }
-  
-  h2 {
-    background:rgba(14,114,164,.6);
   }
 }
 
