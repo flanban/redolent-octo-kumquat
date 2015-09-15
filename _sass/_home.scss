@@ -157,12 +157,22 @@ body { // need to namespace this
       &:last-child {
         margin-right:0px;        
       }
-      > img {
+      > img, span {
         border-bottom:1px solid #ccc;
-        padding-bottom:18px;
         margin-bottom:18px;
-        height: auto;
+        height: 124px;
         width: 36px; 
+        display:inline-block;
+        background-image:url('/images/sprite-home.png');
+        &.hr-icon {
+          background-position:-1250px 0;
+        }
+        &.law-icon {
+          background-position:-1300px 0;
+        }
+        &.finance-icon {
+          background-position:-1350px 0;
+        }      
       }
     }
   }
