@@ -1,5 +1,5 @@
 $(function(){
-  
+  // hide/show nav on scroll
   var waitForFinalEvent = (function () {
     var timers = {};
     return function (callback, ms, uniqueId) {
