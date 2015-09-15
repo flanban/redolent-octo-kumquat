@@ -39,22 +39,19 @@ body p {
 
 .grow-gracefully {
   height:285px;
-  position:relative;
   background-color: #444;
   background-repeat:no-repeat;
   background-position:center;
   background-size: cover;
   h2 {
-    @extend .header-1;
-    font-size:24px;
+    @extend .header-2;
     background-color: rgba(43,114,144,.6);
-    padding:38px;
+    padding:36px;
     letter-spacing: 3px;
     color:#fff;
     position:absolute;
     bottom:40px;
     left:15%;
-    line-height:1;
     text-transform:uppercase;
     @media(max-width: 660px) {
       width: 80%;
@@ -241,82 +238,11 @@ section.si-icons { // mobile hamburger
 a {
   text-decoration:none;
 }
-//widths
-.width-28 {
-  width:28%;
-}
-.width-33 {
-  width:33%;
-}
-.width-38 {
-  width:38%;
-}
-.width-48 {
-  width:48%;
-}
-.width-52 {
-  width:52%;
-}
-.height-38 {
-  height:38%;
-}
-.height-62 {
-  height:62%;
-}
-
-//////// Breakpoint SHIT /////////
-
-$breakpoint-a:480px; // main mobile breakpoint
-$breakpoint-b:580px; 
-$breakpoint-c:768px; // main tablet breakpoint
-$breakpoint-d:850px;
-$breakpoint-e:980px; // main desktop breakpoint
-$breakpoint-f:1440px;
-
-//////// Breakpoint SHIT END /////////
 
 
-//////// image loading SHIT /////////
-/*
-.animated-image {
-  margin-top:50px;
-  opacity:0;
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  transition: all 500ms;
-}
-*/
 
 
-//////// Colors SHIT /////////
-.bg-white {
-  background-color:#fff;    
-}
-.bg-white-95 { // 95% white
-  background-color:#eeeeee;
-}
-.bg-white-85 { // 85% white
-  background-color:#d9d9d9;
-}
-.bg-white-50 {
-  background-color:#808080;  
-}
-.bg-white-35 {
-  background-color:#595959;
-}
-.bg-white-10 {
-  background-color:#1a1a1a;  
-}
-.bg-white-5 {
-  background-color:#0d0d0d;    
-}
-
-p {
-  position:relative; 
-}
-
-
-//////// Layout SHIT /////////
+//////// Layout Stuff /////////
 body > section { 
   overflow:hidden;
   position:relative;
