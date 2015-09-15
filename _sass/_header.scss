@@ -29,22 +29,9 @@ body > header {
     
     
     @media(max-width: 768px) {
-      position:relative;
-      display:block;
-      height: 64px;
-      text-align:left;
-      position: relative;
-      left: 20px;
+      opacity:0;
     }
 
-    img {
-      margin:11px 0;
-      @media(max-width: 768px) {
-        height: 40px;
-        margin-top:24px;
-        opacity:0;
-      }
-    }
   } 
   > nav {
     display:inline-block;
@@ -56,6 +43,7 @@ body > header {
       display:block;
       height:1000px;
       margin-bottom:36px;
+      margin-top:40px;
     }
     > ul {
       li {
@@ -114,11 +102,13 @@ body > header {
 .header-logo-mobile {
     height:96px;
     top: 22px;
+    width:110px;
     position: absolute;
     left: 30px;
     display:inline-block;
     z-index:90;
-    
+    background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/sprite-global.png');
+    background-position:-150px 0;
     @media(min-width: 768px) {
       display:none;
     }
