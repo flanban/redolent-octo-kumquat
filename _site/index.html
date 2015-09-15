@@ -9,7 +9,7 @@
   <title></title>
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/css/main.css">
+  <link async rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="/">
   <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml" />
   
@@ -21,7 +21,6 @@
   <script src="/javascripts/vendor/snap.svg-min.js"></script>
   <script async src="/javascripts/vendor/svgicons.min.js"></script>
   <script async src="/javascripts/nav.js"></script>
-  <script async src="/javascripts/main.js"></script>
     
 </head>
 
@@ -214,12 +213,17 @@
   </body>
 </html>
 
-<script>
 
+<script type="text/javascript">
 
 
 
 	(function() {
+    // remove widows
+    $(document).ready(function() {
+      $('p, .widowless, h5, .header-1').widowFix();
+    });
+
 		// initialize all icons
 		[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
 			var svgicon = new svgIcon( el, svgIconConfig );

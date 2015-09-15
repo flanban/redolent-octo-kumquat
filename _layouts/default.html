@@ -16,12 +16,17 @@
   </body>
 </html>
 
-<script>
 
+<script type="text/javascript">
 
 
 
 	(function() {
+    // remove widows
+    $(document).ready(function() {
+      $('p, .widowless, h5, .header-1').widowFix();
+    });
+
 		// initialize all icons
 		[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
 			var svgicon = new svgIcon( el, svgIconConfig );
