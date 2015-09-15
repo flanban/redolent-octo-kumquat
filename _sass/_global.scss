@@ -83,7 +83,6 @@ body.law .grow-gracefully {
 body.finance .grow-gracefully {
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/finance-2.jpg');
 }
-
 body.ventures .grow-gracefully {
   background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/ventures-2.jpg');
   @media(max-width: 768px) {
@@ -207,15 +206,6 @@ section.si-icons { // mobile hamburger
   }
 }
 
-
-// waypoints sticky
-.sticky {
-  will-change: scroll-position;
-}
-.stuck {
-  position:fixed;
-  top:0;
-}
 .hidden {
   display:none;
 }
@@ -227,61 +217,16 @@ section.si-icons { // mobile hamburger
 .float-left {
   float:left;  
 }
-
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-
-
 a {
   text-decoration:none;
 }
-
-
-
-
-//////// Layout Stuff /////////
+//////// Layout Stuffs /////////
 body > section { 
   overflow:hidden;
   position:relative;
-}
-
-
-.layout-fp { 
-  height:96vh; width:100%;
-  p {
-    position:relative; 
-  }
-}// is a bit less than 100% on purpose
-
-.layout-fp-85   { 
-  height:85vh; 
-  width:100%;
-}
-.layout-fp-70   { 
-  height:70vh; 
-  width:100%;
-}
-.layout-fp-45   { 
-  height:45vh; 
-  width:100%;
-}
-
-
-.two-files-33-66 {
-  .a-file, .b-file {
-    position:absolute;
-    height:100%;
-  }
-  .a-file {
-    left:0;
-    width:33%;
-    padding: 100px 0 0 44px;
-  }
-  .b-file {
-    width:67%;
-    left:33%;
-  }
 }
