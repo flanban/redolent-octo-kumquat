@@ -103,7 +103,7 @@ body { // need to namespace this
       &:nth-last-of-type(-n+2) {
         border-bottom:0px solid white;
       }
-      img {
+      img, span {
         width: 100%;
         height: auto;
       }
