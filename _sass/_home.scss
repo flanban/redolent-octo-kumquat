@@ -54,11 +54,11 @@ body { // need to namespace this
   }
   .left {
     width:60%;
-    padding: 60px 140px;
+    padding: 60px 130px;
     font-size:18px;
     @media(max-width: 959px) {
       width:100%;
-      padding: 60px 130px;
+      padding: 60px 90px;
     }
     @media(max-width: 660px) {
       h4 {
