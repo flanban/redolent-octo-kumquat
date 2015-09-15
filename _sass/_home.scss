@@ -177,7 +177,7 @@ body { // need to namespace this
       display: inline-block;
       vertical-align:top;
       margin-right:86px;
-      @media(max-width: 660px) {
+      @media(max-width: 691px) {
         display:none;
       }
     }
@@ -186,17 +186,20 @@ body { // need to namespace this
       display: inline-block;
       vertical-align:top;
       width:300px;
-      @media(max-width: 660px) {
+      @media(max-width: 691px) {
         text-align:center;
         margin-bottom:60px;
       }
     }
   }
   .img-right {
+    > img {
+      margin-right:16px;
+    }
     > div {
       text-align:right;
-      margin-right:86px;
-      @media(max-width: 660px) {
+      margin-right:70px;
+      @media(max-width: 691px) {
         text-align:center;
         margin-right:0px;
       }
